@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:paddingLeft="2.0dip"
+        android:paddingRight="2.0dip"
+        android:paddingTop="35.0dip" >
+
+        <com.changheng.accountant.view.PinnedHeaderListView
+            android:id="@+id/knoewledge_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="none"
+            android:visibility="visible" />
+    </LinearLayout>
+	<include layout="@layout/nodata_layout"/>
+    <FrameLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="43.0dip"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8.0dip"
+            android:background="@drawable/btn_goback" />
+
+        <LinearLayout
+            android:id="@+id/menuTitleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_center"
+                style="@style/title_comm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_down"
+                android:text="@string/knowledge_everyday" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_item_bg_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_item_menu_bg_out" />
+
+                <ImageView
+                    android:id="@+id/iv_item_bg_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_item_menu_bg_in" 
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

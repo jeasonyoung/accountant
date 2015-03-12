@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sort_bkg_new"
+    android:orientation="vertical"
+    android:paddingLeft="5.0dip"
+    android:paddingRight="5.0dip"
+    android:paddingTop="10.0dip" >
+	<ListView 
+	    android:id="@+id/choosecourse_listView"
+	    android:layout_width="130.0dip"
+	    android:layout_height="wrap_content"
+	    android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:fadingEdge="none"
+        android:divider="@drawable/btn_icon_line"
+	    ></ListView>
+</LinearLayout>

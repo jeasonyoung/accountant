@@ -1,0 +1,49 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+article,aside,details,figcaption,figure,time,
+footer,header,hgroup,menu,nav,section { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+input, select { vertical-align: middle; }
+a{ text-decoration: none; outline: 0; }
+li{ list-style: none; }
+
+body{ background: #FDF8EA; font-family: Helvetica, sans-serif; }
+h1{ font-size: 40px; font-weight: normal; padding: 0 0 30px; color:#000;}
+article{ background: url(/img/community/mobile/line.png) center bottom no-repeat; font-size: 32px; line-height: 1.4; color: #585858; padding: 40px 40px 30px 40px;}
+article dl{ font-size: 30px; background: url(/img/community/mobile/cell_line.png) center top no-repeat; }
+article dd img{ vertical-align: middle; margin: 0 0.5em 0 0; }
+article dt{ padding: 1.2em 0 0.2em; }
+article dd{ padding: 0.7em 0 0; color: #449DAC;}
+article dd a{ padding: 0.4em 0 0; color: #449DAC;}
+article img{ width: 560px; height: 560px; }
+h2{ display: block; background: url(/img/community/mobile/section_title.png) 0 100% no-repeat; padding: 0.5em; font-size: 30px; font-weight: normal;}
+section{ background: url(/img/community/mobile/cell_line.png) 0 100% no-repeat;  padding: 0.5em 0 1.5em; }
+section b{ font-size: 20px; font-weight: normal; color: #449DAC; display: block; text-align: right; padding: 10px 30px 0; }
+section p{ font-size: 30px; line-height: 1.4; padding: 10px 30px;color: #585858; }
+section time{ font-size: 20px; color: #999; text-align: right; padding: 0px 30px 0 0;}
+.other{ font-size: 30px; background: url(/img/community/mobile/cell_line.png) center top no-repeat; padding: 0 40px 30px 40px; }
+.other dd img{ vertical-align: middle; margin: 0 0.5em 0 0; }
+.other dt{ padding: 1.2em 0 0.2em; }
+.other dd{ padding: 0.7em 0 0; color: #449DAC;}
+.other dd a{ padding: 0.4em 0 0; color: #449DAC;}
+
+
+
+
+
+
+
+

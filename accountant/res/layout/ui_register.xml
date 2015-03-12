@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightbule2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:layout_marginBottom="10.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_goback"
+            android:background="@drawable/btn_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.3" />
+
+        <TextView
+            android:id="@+id/title"
+            android:textSize="@dimen/title_medium_size"
+       		android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/regist_tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*用户名："
+                    android:textColor="@color/default_text_black" />
+
+                <com.changheng.accountant.view.ImgRightEditText
+                    android:id="@+id/regist_etUserName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/usernameHint"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                     />
+
+                    <TextView
+                        android:id="@+id/regist_tvPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*密码："
+                        android:textColor="@color/default_text_black" />
+
+                    <com.changheng.accountant.view.ImgRightEditText
+                        android:id="@+id/regist_etPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/pwdHint"
+                        android:inputType="textPassword"
+                        android:singleLine="true" 
+                        android:imeOptions="actionNext"
+                        />
+
+                    <TextView
+                        android:id="@+id/regist_tvConfirimPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*确认密码："
+                        android:textColor="@color/default_text_black" />
+
+                    <com.changheng.accountant.view.ImgRightEditText
+                        android:id="@+id/regist_etConfirimPass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/pwd2Hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                         />
+
+                    <TextView
+                        android:id="@+id/regist_tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*真实姓名："
+                        android:textColor="@color/default_text_black" />
+
+                    <com.changheng.accountant.view.ImgRightEditText
+                        android:id="@+id/regist_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/emailHint"
+                        android:singleLine="true" 
+                        android:imeOptions="actionNext"
+                        />
+
+                    <TextView
+                        android:id="@+id/regist_tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机："
+                        android:textColor="@color/default_text_black" />
+
+                    <com.changheng.accountant.view.ImgRightEditText
+                        android:id="@+id/regist_tel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/phonenumHint"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext" 
+                        />
+                    
+                    <TextView
+                        android:id="@+id/regist_tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邮箱："
+                        android:textColor="@color/default_text_black" />
+
+                    <com.changheng.accountant.view.ImgRightEditText
+                        android:id="@+id/regist_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/phonenumHint"
+                        android:singleLine="true"
+                        android:imeOptions="actionGo" 
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50.0dip"
+                        android:layout_marginTop="20.0dip" >
+
+                        <Button
+                            android:id="@+id/regist_btnSubmit"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blue_button"
+                            android:padding="10dip"
+                            android:text="@string/register2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

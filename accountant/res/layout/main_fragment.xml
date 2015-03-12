@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="none"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="12.0dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/main_top_bg" >
+
+            <!--
+                 <include
+                android:id="@+id/pregnancy_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/time_tip_view" />
+            -->
+
+            <RelativeLayout
+                android:id="@+id/set_date_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="12.0dip" >
+
+                <TextView
+                    android:id="@+id/day_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/calculate"
+                    android:drawablePadding="5.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_medium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/usernameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/register_username"
+                    android:drawablePadding="5.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_medium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mama_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/day_date"
+                    android:text="@string/restTime"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_medium_size" />
+
+                <TextView
+                    android:id="@+id/rest_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/mama_tip"
+                    android:layout_toRightOf="@id/mama_tip"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_medium_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/home_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right|center"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/sign_in_un"
+                android:gravity="center"
+                android:paddingBottom="30.0dip"
+                android:text="签\n到"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large_size"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.changheng.accountant.view.HomeGrid
+            android:id="@+id/gridview1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/home_grid_space"
+            android:cacheColorHint="@drawable/trans"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/home_grid_space"
+            android:listSelector="@drawable/trans"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/home_grid_space" />
+
+        <FrameLayout
+            android:id="@+id/layout_ad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12.0dip"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!--
+                <com.babytree.apps.biz.home.ad.ScrollPager
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:babytree="http://schemas.android.com/apk/res/com.example.scrollview"
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.babytree.apps.biz.home.ad.PagerControl
+                    android:id="@+id/pager_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:visibility="visible" />
+            -->
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="12.0dip"
+            android:background="@drawable/home_commend_title"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left|center"
+                android:padding="8.0dip"
+                android:text="推荐"
+                android:textColor="#ffff7488"
+                android:textSize="@dimen/title_medium_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+        </View>
+        <!--
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/home_grid_space"
+                android:layout_marginLeft="@dimen/home_grid_space"
+                android:layout_marginRight="@dimen/home_grid_space"
+                android:background="@drawable/home_commend_list"
+                android:orientation="vertical" >
+
+                <com.babytree.apps.biz.home.ui.HomeListView
+                    android:id="@+id/home_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8.0dip"
+                    android:background="@*android:color/transparent"
+                    android:divider="@null"
+                    android:gravity="center"
+                    android:listSelector="@drawable/trans" />
+
+                <TextView
+                    android:id="@+id/notify_fail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="50.0dip"
+                    android:gravity="center_horizontal"
+                    android:text="@string/s_home_load_fail"
+                    android:textColor="#ff9b9b9b"
+                    android:textSize="16.0sp"
+                    android:visibility="gone" /></LinearLayout>
+        -->
+    </LinearLayout>
+
+</ScrollView>

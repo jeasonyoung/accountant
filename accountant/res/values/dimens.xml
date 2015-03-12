@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="home_ic_w">72.0dip</dimen>
+    <dimen name="home_ic_h">72.0dip</dimen>
+    <dimen name="home_text_size">14.0dip</dimen>
+	<dimen name="padding_small">8.0dip</dimen>
+    <dimen name="padding_medium">8.0dip</dimen>
+    <dimen name="padding_large">16.0dip</dimen>
+    <dimen name="text_medium_size">16.0sp</dimen>
+    <dimen name="text_small_size">14.0sp</dimen>
+    <dimen name="text_little_size">12.0sp</dimen>
+    <dimen name="text_little_size11">11.0sp</dimen>
+    <dimen name="text_large_size">18.0sp</dimen>
+    <dimen name="title_medium_size">20.0sp</dimen>
+    <dimen name="title_small_size">18.0sp</dimen>
+    <dimen name="title_large_size">22.0sp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <integer name="num_cols">1</integer>
+    
+    <dimen name="topic_content_text_size">16.0sp</dimen>
+    <dimen name="topic_content_floor_text_size">14.0sp</dimen>
+    <dimen name="topic_title_text_size">18.0sp</dimen>
+    <dimen name="topic_username_text_size">14.0sp</dimen>
+    <dimen name="topic_location_text_size">12.0sp</dimen>
+    <dimen name="topic_view_text_size">12.0sp</dimen>
+    <dimen name="topic_response_text_size">12.0sp</dimen>
+    <dimen name="topic_level_text_size">12.0sp</dimen>
+    <dimen name="topic_time_text_size">12.0sp</dimen>
+    <dimen name="topic_content_line_spacing">2.0dip</dimen>
+    <dimen name="home_grid_space">12.0dip</dimen>
+</resources>

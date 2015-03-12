@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10.0dip"
+    android:background="@color/white"
+    >
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10.0dip"
+        android:paddingLeft="32.0dip"
+        android:button="@drawable/checkbox_button"
+        android:text="会计基础"
+        android:textSize="@dimen/text_medium_size" />
+</RelativeLayout>

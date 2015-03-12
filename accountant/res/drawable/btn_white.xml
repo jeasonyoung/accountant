@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/lightgrey2" android:state_pressed="true"/>
+    <item><shape>
+
+            <!-- 渐变 -->
+            <gradient android:centerColor="@color/white" android:endColor="@color/white" android:startColor="@color/white" />
+            <!-- 描边 -->
+            <!-- 圆角 -->
+            <corners android:radius="5.0dp" />
+        </shape></item>
+
+</selector>

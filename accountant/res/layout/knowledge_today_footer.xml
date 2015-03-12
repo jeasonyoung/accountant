@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/paperTv"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingLeft="10.0dip"
+        android:text="模拟考试"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_medium_size" />
+	<com.changheng.accountant.view.MyListView
+		android:id="@+id/paperList"
+		android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:background="@android:color/transparent"
+        android:divider="@drawable/topic_driver"
+        android:dividerHeight="1.0dip"
+        android:gravity="center"
+        android:listSelector="@drawable/trans" 
+        android:fadingEdge="none"	    
+	    />
+</LinearLayout>

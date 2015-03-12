@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightbule2"
+    android:orientation="vertical" >
+	  <include
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_head" />
+	<FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/topTitle"
+	    >
+	<LinearLayout 
+	    android:id="@+id/contentLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    >
+	    <TextView
+	        android:id="@+id/littleTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left|center"
+        android:layout_marginLeft="10.0dip"
+        android:padding="10.0dip"
+        android:text="选择科目"
+        android:textColor="#ff006ba9"
+        android:textSize="@dimen/title_large_size" />
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1.0dip"
+	    android:background="@drawable/top_menu_slice"
+	    />
+    <ListView
+        android:id="@+id/course_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:background="@android:color/transparent"
+        android:divider="@drawable/topic_driver"
+        android:dividerHeight="1.0dip"
+        android:gravity="center"
+        android:listSelector="@drawable/trans" 
+        android:fadingEdge="none"
+        />
+	</LinearLayout>
+	<include layout="@layout/nodata_layout"/>
+	<include layout="@layout/reload"/>
+    </FrameLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        >
+   	<Button 
+   	    android:id="@+id/showPop"
+   	   	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-15dip"
+        android:background="@drawable/last_exam_small"
+        android:visibility="gone"
+   	    />
+   	</LinearLayout>
+</RelativeLayout>

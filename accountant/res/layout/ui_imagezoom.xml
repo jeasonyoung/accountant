@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffeeee"
+    android:orientation="vertical" >
+
+    <include 
+        layout="@layout/loading_nowords"
+        /> 
+    <include
+        layout="@layout/reload"/>
+    <com.polites.android.GestureImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	gesture-image:min-scale="0.75"
+    	gesture-image:max-scale="10.0"
+    	/>
+     <include
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        layout="@layout/top_head" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="10.0dip"
+        android:paddingBottom="10dip"
+        android:layout_gravity="bottom" >
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="50.dip"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/save_image" />
+    </LinearLayout>
+</FrameLayout>

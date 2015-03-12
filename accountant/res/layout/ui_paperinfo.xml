@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/paper_list_bg"
+    android:orientation="vertical" >
+    <!-- 顶部 -->
+    <include
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_head" />
+		<com.changheng.accountant.view.BounceScrollView 
+		    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+		    >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 试卷标题 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/papertitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15.0dip"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="初级会计师职称考试练习一"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_large_size" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_menu_slice" />
+            <!-- 按钮 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_margin="10.0dip">
+
+                <Button
+                    android:id="@+id/btn_pratice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_reg"
+                    android:text="开始考试"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_medium_size" 
+                    android:layout_weight="1"
+                    />
+                <Button
+                    android:id="@+id/btn_restart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_exam_start"
+                    android:text="重新开始"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_medium_size" 
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_menu_slice" />
+            <!-- 试卷信息 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+				<View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10.0dip" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="大题数: "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size" />
+
+                        <TextView
+                            android:id="@+id/rulesize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 未知"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总题数: "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size" />
+
+                        <TextView
+                            android:id="@+id/questionNumTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未知"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10.0dip" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卷面总分: "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size" />
+
+                        <TextView
+                            android:id="@+id/paperscore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 50"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="考试时间: "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size" />
+
+                        <TextView
+                            android:id="@+id/papertime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="26"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分钟"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_medium_size"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10.0dip" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_menu_slice" />
+            <!-- 大题信息 -->
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ruleInfoLayout"
+                >
+                </LinearLayout>
+        </LinearLayout>
+        </com.changheng.accountant.view.BounceScrollView>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/importPlan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="导入全国计划数据" >
+    </Button>
+
+    <Button
+        android:id="@+id/importData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="导入全国题目数据" >
+    </Button>
+
+    <Button
+        android:id="@+id/updateData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="获取更新题目数据" >
+    </Button>
+
+    <Button
+        android:id="@+id/turnData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="转换题目数据" >
+    </Button>
+    <Button
+        android:id="@+id/importAllData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="导入各个地区的题目数据" >
+    </Button>
+    <Button
+        android:id="@+id/importAllPlan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="导入各个地区的计划数据" >
+    </Button>
+    <Button
+        android:id="@+id/getAllUpdata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="获得各地区更新数据" >
+    </Button>
+    <Button 
+        android:id="@+id/test"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试解析xml" />
+</LinearLayout>

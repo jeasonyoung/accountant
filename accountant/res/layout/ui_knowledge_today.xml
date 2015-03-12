@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- 顶部 -->
+    <include
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_head" />
+    <FrameLayout
+        android:id="@+id/listview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/topic_line"
+            android:drawSelectorOnTop="false"
+            android:visibility="visible" />
+        <include layout="@layout/loading_layout" />
+
+        <include layout="@layout/reload" />
+
+        <include layout="@layout/nodata_layout" />
+    </FrameLayout>
+</LinearLayout>

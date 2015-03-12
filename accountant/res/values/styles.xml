@@ -1,0 +1,116 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar" />
+	<style name="EditText" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/text_small_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="mainselect">
+        <item name="android:background">@drawable/mainselect</item>
+    </style>
+    <style name="home_item">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="AnimationFade">
+    	<item name="android:windowEnterAnimation">@anim/fade_in</item>
+    	<item name="android:windowExitAnimation">@anim/fade_out</item>
+	</style>
+	
+    <style name="AnimationPreview">    
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>  
+        <item name="android:windowExitAnimation">@anim/fade_out</item>  
+    </style>  
+    
+     <style name="title_comm">
+        <item name="android:textSize">23.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+    <style name="menu_item">
+        <item name="android:textSize">@dimen/text_medium_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="mine_msg">
+        <item name="android:textSize">@dimen/text_large_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left</item>
+    </style>
+        <style name="ProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">5.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@*android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progressbar</item>
+        <item name="android:minHeight">5.0dip</item>
+    </style>
+    <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:indeterminateDrawable">@anim/loading</item>
+		<item name="android:layout_width">21dip</item> 
+		<item name="android:layout_height">21dip</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+    <style name="main_footbar_image">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/widget_bar_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+   	<style name="main_footbar_cutline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+   	<style name="frame_button">
+        <item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_height">fill_parent</item>
+       	<item name="android:layout_weight">1</item>
+       	<item name="android:background">@drawable/frame_button_bg</item>
+       	<item name="android:button">@null</item>
+       	<item name="android:gravity">center</item>
+       	<item name="android:textColor">@color/frame_button_text_light</item>
+    </style>
+    
+   	<style name="RadioButton">
+        <item name="android:textSize">@dimen/text_medium_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:button">@drawable/radio_button</item>
+    </style>
+</resources>

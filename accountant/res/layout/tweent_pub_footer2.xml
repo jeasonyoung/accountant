@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布到:"
+            android:textColor="#ff878787"
+            android:textSize="@dimen/text_small_size" />
+
+        <TextView
+            android:id="@+id/tv_select_group"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="2013年同城圈"
+            android:textColor="#ff89cbed"
+            android:textSize="@dimen/text_small_size" />
+		<ImageView
+			android:id="@+id/tweet_pub_image"
+			android:layout_width="30.0dip"
+			android:layout_height="30.0dip"
+			android:layout_marginLeft="5.0dip"
+			android:layout_marginBottom="5.0dip"
+			android:layout_marginRight="15.0dip"
+			android:layout_gravity="left|bottom"
+			android:clickable="true"
+			android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/btn_photo"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_addpic_new"
+            android:contentDescription="@string/app_name" />
+
+       <!--  <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/btn_voice_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/btn_xunfei"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/icon_voice" /> -->
+    </LinearLayout>

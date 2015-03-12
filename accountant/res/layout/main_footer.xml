@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_linearlayout_footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_bar_bg_n"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/btn_home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/widget_bar_bg"
+        android:button="@null"
+        android:drawableTop="@drawable/weight_home"
+        android:gravity="center"
+        android:padding="3.0dip"
+        android:checked="true"
+        android:text="主页"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small_size" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/widget_bar_cut_off" />
+
+    <RadioButton
+        android:id="@+id/btn_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/widget_bar_bg"
+        android:button="@null"
+        android:drawableTop="@drawable/weight_setting"
+        android:gravity="center"
+        android:padding="3.0dip"
+        android:text="设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small_size" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/widget_bar_cut_off" />
+    
+    <RadioButton
+        android:id="@+id/btn_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/widget_bar_bg1"
+        android:button="@null"
+        android:drawableTop="@drawable/weight_more"
+        android:gravity="center"
+        android:padding="3.0dip"
+        android:text="更多"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small_size" />
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ashen"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/TopTitleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/top_bg"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/returnbtn"
+            android:layout_width="50.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@color/none"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_goback" />
+
+        <TextView
+            android:id="@+id/TopTitle1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/none"
+            android:fadingEdge="vertical"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/toptitle_record"
+            android:textColor="@color/white"
+            android:textSize="25.0dip" />
+    </RelativeLayout>
+            <RadioGroup 
+            android:id="@+id/button_line_layout"
+        	android:layout_width="fill_parent"
+        	android:layout_height="35.0dip"
+        	android:gravity="center_vertical"
+       	 	android:orientation="horizontal" 
+            >
+            <RadioButton
+            android:id="@+id/frame_btn_news_lastest"
+            style="@style/frame_button"
+            android:checked="true"
+            android:tag="0"
+            android:text="@string/error_follow_exam" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/frame_button_cutline" />
+        <RadioButton
+            android:id="@+id/frame_btn_news_blog"
+            style="@style/frame_button"
+            android:tag="1"
+            android:text="@string/error_forget_line" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/frame_button_cutline" />
+        <RadioButton
+            android:id="@+id/frame_btn_news_recommend"
+            style="@style/frame_button"
+            android:tag="2"
+            android:text="@string/error_frequent" />
+        </RadioGroup>
+<com.changheng.accountant.view.ScrollLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffed32" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ceb452" >
+    </LinearLayout>
+	 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#452cdb" >
+    </LinearLayout>
+
+</com.changheng.accountant.view.ScrollLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_beta_more_menu_linearlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/topic_new_menu_bc"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ListView
+        android:id="@+id/forum_menu_listView1"
+        android:layout_width="100.0dip"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:fadingEdge="none"
+        android:divider="@drawable/btn_icon_line"
+        />
+</LinearLayout>

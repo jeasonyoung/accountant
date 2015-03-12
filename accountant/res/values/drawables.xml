@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item type="drawable" name="trans">#00000000</item>
+    <item type="drawable" name="c_home_item_knowledge">#ffff8f95</item>
+    <item type="drawable" name="c_home_item_chapter">#ff5dc7ef</item>
+    <item type="drawable" name="c_home_item_favor">#ffffc351</item>
+    <item type="drawable" name="c_home_item_error_redo">#ff9ABA65</item>
+    <item type="drawable" name="c_home_item_exam">#fff988c5</item>
+    <item type="drawable" name="c_home_item_notebook">#ff65dbf0</item>
+    <item type="drawable" name="c_home_item_cycle">#ffe2a4ff</item>
+    <item type="drawable" name="c_home_item_record">#ff69ddb8</item>
+    <item type="drawable" name="c_home_item_other">#fff4b98e</item>
+    <item type="drawable" name="c_notice_list_divider">#ffd2d2d2</item>
+    <item type="drawable" name="backgroud">#fffdf8ea</item>
+    <item type="drawable" name="background2">@color/gray</item>
+</resources>

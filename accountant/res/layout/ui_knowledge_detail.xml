@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settime"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffeeee"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_head" />
+	<com.handmark.pulltorefresh.library.PullToRefreshWebView
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    ptr:ptrHeaderSubTextColor="@android:color/black"
+    ptr:ptrHeaderTextColor="@android:color/black"
+    ptr:ptrMode="both" />
+</LinearLayout>

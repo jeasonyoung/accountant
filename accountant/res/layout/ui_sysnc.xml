@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+	<include layout="@layout/top_head"/>
+	<FrameLayout
+	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/synLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/background_box"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/mulitiple_chose_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/ck_bookmark"
+                    style="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:checked="true"
+                    android:button="@drawable/checkbox_button_img"
+                    android:text="    我的收藏" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_line" />
+
+                <CheckBox
+                    android:id="@+id/ck_wrong"
+                    style="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:button="@drawable/checkbox_button_img"
+                    android:checked="true"
+                    android:text="    错题" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_line" />
+
+               <!--  <CheckBox
+                    android:id="@+id/ck_pratice"
+                    style="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox"
+                    android:text="最近练习" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_line" /> -->
+
+                <CheckBox
+                    android:id="@+id/ck_exam"
+                    style="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:button="@drawable/checkbox_button_img"
+                    android:checked="true"
+                    android:text="    模拟考试" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip" />
+
+        <Button
+            android:id="@+id/btn_syn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:background="@drawable/btn_reg"
+            android:gravity="center"
+            android:text="开始同步"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_medium_size" />
+    </LinearLayout>
+    <include layout="@layout/loading_layout"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/MainTopLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/widget_bar_bg_n"
+        android:orientation="horizontal" >
+
+        <!--
+             <ImageView
+            android:id="@+id/TopLogoImg"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_centerInParent="true"
+            android:contentDescription="top logo"
+            android:src="@drawable/logobeta1" />
+        -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_large_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/area_version_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:padding="10.0dip" 
+            android:visibility="gone"
+            >
+
+            <ImageButton
+                android:id="@+id/menuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_select_question" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_replace_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/MainTopLayout" >
+    </FrameLayout>
+	<include layout="@layout/main_footer" android:layout_below="@id/fragment_replace_layout" /> 
+    <!--
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/MainTopLayout"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="12.0dip"
+            android:background="#ffffeeee"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/pregnancy_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="260.0dip"
+                layout="@layout/time_tip_view" />
+
+            <com.changheng.accountant.view.HomeGrid
+                android:id="@+id/gridview1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/home_grid_space"
+                android:cacheColorHint="@drawable/trans"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/home_grid_space"
+                android:listSelector="@drawable/trans"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/home_grid_space" 
+                />
+
+            <FrameLayout
+                android:id="@+id/layout_ad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12.0dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="12.0dip"
+                android:background="@drawable/home_commend_title"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left|center"
+                    android:padding="8.0dip"
+                    android:text="推荐"
+                    android:textColor="#ffff7488"
+                    android:textSize="20.0sp" />
+            </LinearLayout></LinearLayout></ScrollView>
+    -->
+
+</RelativeLayout>

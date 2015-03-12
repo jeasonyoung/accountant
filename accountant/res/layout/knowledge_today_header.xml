@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:paddingTop="10.0dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_medium_size" />
+
+        <TextView
+            android:id="@+id/timerTv"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_small_size" />
+    </LinearLayout>
+
+    <!-- <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topic_driver" />
+    按钮
+
+    <TextView
+        android:id="@+id/planTv"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/knowledge_today"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_small_size" /> -->
+
+</LinearLayout>

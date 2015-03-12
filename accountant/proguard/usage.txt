@@ -1,0 +1,2092 @@
+com.changheng.accountant.AppConfig:
+    private static final java.lang.String APP_CONFIG
+    public static final java.lang.String TEMP_TWEET
+    public static final java.lang.String TMEP_TWEET_TITLE
+    public static final java.lang.String TEMP_TWEET_IMAGE
+    public static final java.lang.String TEMP_REPLY_IMAGE
+    public static final java.lang.String TEMP_MESSAGE
+    public static final java.lang.String TEMP_COMMENT
+    public static final java.lang.String TEMP_POST_TITLE
+    public static final java.lang.String TEMP_POST_CATALOG
+    public static final java.lang.String TEMP_POST_CONTENT
+    public static final java.lang.String CONF_APP_UNIQUEID
+    public static final java.lang.String CONF_COOKIE
+    public static final java.lang.String CONF_ACCESSTOKEN
+    public static final java.lang.String CONF_ACCESSSECRET
+    public static final java.lang.String CONF_EXPIRESIN
+    public static final java.lang.String CONF_LOAD_IMAGE
+    public static final java.lang.String CONF_SCROLL
+    public static final java.lang.String CONF_HTTPS_LOGIN
+    public static final java.lang.String CONF_VOICE
+    public static final java.lang.String CONF_CHECKUP
+    public static final java.lang.String CONF_EXAMTIME
+    public static final java.lang.String CONF_AUTOLOGIN
+    public static final java.lang.String CONF_SELECTED_COURSEID
+    public static final java.lang.String CONT_EXAM_FONT_SIZE
+    public static final java.lang.String CONF_LIMIT_DATE
+    public static final java.lang.String CONF_REST_HOURS
+    public static final java.lang.String SAVE_IMAGE_PATH
+    75:75:public static android.content.SharedPreferences getSharedPreferences(android.content.Context)
+    82:82:public static boolean isLoadImage(android.content.Context)
+    86:86:public java.lang.String getCookie()
+    102:103:public void setAccessToken(java.lang.String)
+    106:106:public java.lang.String getAccessToken()
+    110:111:public void setAccessSecret(java.lang.String)
+    114:114:public java.lang.String getAccessSecret()
+    118:119:public void setExpiresIn(long)
+    122:122:public long getExpiresIn()
+    127:127:public float getExamFontSize()
+    131:132:public void setExamFontSize(float)
+    135:137:public void setExpires(java.lang.String)
+    154:159:public java.lang.String getExpires()
+com.changheng.accountant.AppContext:
+    public static final int NETTYPE_WIFI
+    public static final int NETTYPE_CMWAP
+    public static final int NETTYPE_CMNET
+    public static final int PAGE_SIZE
+    private static final int CACHE_TIME
+    public static final int LOGINING
+    public static final int LOGIN_FAIL
+    public static final int LOGINED
+    public static final int UNLOGIN
+    public static final int LOCAL_LOGINED
+    private java.lang.String limitDate
+    175:176:public boolean isAudioNormal()
+    185:185:public boolean isAppSound()
+    306:306:public int getLoginUid()
+    314:314:public java.lang.String getNickname()
+    321:326:public void Logout()
+    332:332:public android.os.Handler getUnLoginHandler()
+    429:436:public com.changheng.accountant.entity.User getLoginInfo()
+    447:451:public void saveUserFace(java.lang.String,android.graphics.Bitmap)
+    461:472:public android.graphics.Bitmap getUserFace(java.lang.String)
+    495:496:public void setConfigLoadimage(boolean)
+    504:509:public boolean isVoice()
+    518:519:public void setConfigVoice(boolean)
+    552:553:public void setConfigCheckUp(boolean)
+    561:566:public boolean isScroll()
+    573:574:public void cleanCookie()
+    607:614:public boolean isCacheDataFailure(java.lang.String)
+    689:690:public void setMemCache(java.lang.String,java.lang.Object)
+    699:699:public java.lang.Object getMemCache(java.lang.String)
+    710:721:public void setDiskCache(java.lang.String,java.lang.String)
+    731:742:public java.lang.String getDiskCache(java.lang.String)
+    838:839:public boolean containsProperty(java.lang.String)
+    868:868:public java.lang.String getSaveImagePath()
+    877:878:public void setSaveImagePath(java.lang.String)
+    988:988:public com.changheng.accountant.entity.Notice getUserNotice(int)
+com.changheng.accountant.AppException:
+    private static final long serialVersionUID
+    private static final boolean Debug
+    public static final byte TYPE_NETWORK
+    public static final byte TYPE_SOCKET
+    public static final byte TYPE_HTTP_CODE
+    public static final byte TYPE_HTTP_ERROR
+    public static final byte TYPE_XML
+    public static final byte TYPE_IO
+    public static final byte TYPE_RUN
+    190:195:public static com.changheng.accountant.AppException io(java.lang.Exception)
+    214:214:public static com.changheng.accountant.AppException run(java.lang.Exception)
+    224:224:public static com.changheng.accountant.AppException getAppExceptionHandler()
+com.changheng.accountant.AppManager:
+    47:49:public void finishActivity()
+    64:69:public void finishActivity(java.lang.Class)
+com.changheng.accountant.BuildConfig
+com.changheng.accountant.R:
+    10:10:public R()
+com.changheng.accountant.adapter.ForumPostReplyListAdapter$2:
+    147:152:public void onImageClick(java.lang.String)
+com.changheng.accountant.adapter.GridViewFaceAdapter:
+    47:50:public GridViewFaceAdapter(android.content.Context)
+com.changheng.accountant.adapter.QuestionAdapter:
+    708:713:public void setRadioEnable(android.widget.RadioGroup,boolean)
+com.changheng.accountant.adapter.QuestionAdapter$ContentViewHolder:
+    android.widget.TextView myAnswerTextView
+    android.widget.TextView sysAnswerTextView
+    android.widget.TextView analysisTextView
+    android.view.View$OnClickListener showAnswerListener
+com.changheng.accountant.adapter.ViewPagerAdapter:
+    private static final java.lang.String SHAREDPREFERENCES_NAME
+com.changheng.accountant.dao.CourseDao:
+    private static final java.lang.String TAG
+com.changheng.accountant.dao.PaperDao:
+    private static final java.lang.String TAG
+    public static final int pagesize
+    48:88:public void insertPaper(com.changheng.accountant.entity.Paper,java.util.List)
+    91:106:public void insertPracticePaper(com.changheng.accountant.entity.Paper)
+    109:126:public void updatePraticePaper(com.changheng.accountant.entity.Paper)
+    349:375:public java.util.List findQuestionsByRuleId(java.lang.String)
+    485:515:public java.util.List findQuestionFromQids(java.lang.String)
+    813:823:public int findErrorNumOfPractice(java.lang.String)
+    933:944:public void deleteFavors(java.lang.String,java.lang.String)
+    963:974:public void deleteErrors(java.lang.String,java.lang.String)
+    1013:1031:public java.util.List findFavors(java.lang.String)
+    1195:1209:public java.util.ArrayList findKnowledge(java.lang.String)
+    1233:1245:public java.lang.String findKnowledgeContent(java.lang.String)
+    1509:1521:public java.lang.String getQidsUnderKnowledge(java.lang.String)
+com.changheng.accountant.dao.PlanDao:
+    private com.changheng.accountant.db.PlanDBHelper dbhelper
+    22:25:public PlanDao(android.content.Context)
+    33:60:public void insertClass(java.util.ArrayList)
+    63:90:public void insertArea(java.util.ArrayList)
+    93:110:public void insertKnowledgeList(java.util.ArrayList)
+    114:129:public void insertPlans(java.util.ArrayList)
+com.changheng.accountant.dao.UserDao:
+    private static final java.lang.String TAG
+    22:39:public long addUser(com.changheng.accountant.entity.User)
+    61:67:public void update(com.changheng.accountant.entity.User)
+    110:111:public void closeDB()
+com.changheng.accountant.db.MyDBHelper:
+    public static final java.lang.String DATABASENAME
+    public static final int VERSION
+    public static final int READ
+    public static final int WRITE
+    15:17:public MyDBHelper(android.content.Context,java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,int)
+com.changheng.accountant.db.MyDBManager:
+    public static final java.lang.String DB_NAME
+    public static final java.lang.String ZIP_NAME
+    public static final java.lang.String PACKAGE_NAME
+com.changheng.accountant.db.PlanDBHelper:
+    public static final java.lang.String DATABASENAME
+    public static final int VERSION
+    public static final int READ
+    public static final int WRITE
+    15:17:public PlanDBHelper(android.content.Context,java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,int)
+com.changheng.accountant.db.PlanDBManager:
+    public static final java.lang.String DB_NAME
+    public static final java.lang.String PACKAGE_NAME
+com.changheng.accountant.db.UserDBHelper
+com.changheng.accountant.entity.AppUpdate:
+    36:36:public java.lang.String getContent()
+com.changheng.accountant.entity.Base:
+    public static final java.lang.String UTF8
+    public static final java.lang.String NODE_ROOT
+com.changheng.accountant.entity.Chapter:
+    private int _id
+    19:19:public int get_id()
+    22:23:public void set_id(int)
+com.changheng.accountant.entity.Course:
+    private long _id
+    private java.lang.String coursePid
+    10:10:public long get_id()
+    13:14:public void set_id(long)
+    28:28:public java.lang.String getCoursePid()
+    31:32:public void setCoursePid(java.lang.String)
+    37:41:public Course(java.lang.String,java.lang.String,java.lang.String)
+com.changheng.accountant.entity.CourseAdapterData
+com.changheng.accountant.entity.CourseList:
+    12:13:public void setChapterList(java.util.ArrayList)
+    18:19:public void setClassList(java.util.ArrayList)
+com.changheng.accountant.entity.Entity:
+    15:15:public java.lang.String getCacheKey()
+com.changheng.accountant.entity.ExamErrorQuestion:
+    private long _id
+    private java.lang.String examId
+    private int status
+    8:8:public int getStatus()
+    11:12:public void setStatus(int)
+    21:21:public long get_id()
+    24:25:public void set_id(long)
+    47:47:public java.lang.String getExamId()
+    50:51:public void setExamId(java.lang.String)
+    56:57:public void setPaperId(java.lang.String)
+    62:62:public java.lang.String getAddTime()
+com.changheng.accountant.entity.ExamFavor:
+    private long _id
+    7:7:public java.lang.String getAddTime()
+    13:13:public long get_id()
+    16:17:public void set_id(long)
+    34:38:public ExamFavor(java.lang.String,java.lang.String,java.lang.String)
+    43:44:public void setPaperId(java.lang.String)
+com.changheng.accountant.entity.ExamNote:
+    private long _id
+    8:8:public long get_id()
+    11:12:public void set_id(long)
+    17:18:public void setQid(java.lang.String)
+    20:20:public java.lang.String getClassId()
+    23:24:public void setClassId(java.lang.String)
+    29:30:public void setContent(java.lang.String)
+    35:36:public void setAddTime(java.lang.String)
+    58:59:public void setUsername(java.lang.String)
+    64:65:public void setPaperId(java.lang.String)
+com.changheng.accountant.entity.ExamQuestion:
+    private long _id
+    18:18:public long get_id()
+    21:22:public void set_id(long)
+    42:42:public java.lang.String getqType()
+    45:46:public void setqType(java.lang.String)
+    86:87:public void setLinkQid(java.lang.String)
+    104:105:public void setOrderId(int)
+com.changheng.accountant.entity.ExamRecord:
+    private long _id
+    private java.lang.String examId
+    private int hasDone
+    private int isSync
+    12:12:public int getIsSync()
+    15:16:public void setIsSync(int)
+    38:38:public long get_id()
+    41:42:public void set_id(long)
+    44:44:public java.lang.String getExamId()
+    47:48:public void setExamId(java.lang.String)
+com.changheng.accountant.entity.ExamRule:
+    private long _id
+    23:23:public long get_id()
+    26:27:public void set_id(long)
+com.changheng.accountant.entity.ForumPost:
+    private java.lang.String url
+    private int catalog
+    private int isNoticeMe
+    private int favorite
+    private java.io.File imageFile
+    33:33:public java.io.File getImageFile()
+    36:37:public void setImageFile(java.io.File)
+    51:51:public java.lang.String getUrl()
+    54:55:public void setUrl(java.lang.String)
+    75:75:public int getAuthorId()
+    99:99:public int getCatalog()
+    102:103:public void setCatalog(int)
+    105:105:public int getIsNoticeMe()
+    108:109:public void setIsNoticeMe(int)
+    111:111:public int getFavorite()
+    114:115:public void setFavorite(int)
+com.changheng.accountant.entity.ForumPostList
+com.changheng.accountant.entity.ForumPostReply:
+    59:59:public java.lang.String getAuthorId()
+com.changheng.accountant.entity.Info:
+    41:41:public java.lang.String getAuthor()
+com.changheng.accountant.entity.Knowledge:
+    private int _id
+    private java.lang.String topic
+    private java.lang.String summaryContent
+    private java.lang.String url
+    35:35:public int get_id()
+    38:39:public void set_id(int)
+    59:59:public java.lang.String getTopic()
+    62:63:public void setTopic(java.lang.String)
+    71:71:public java.lang.String getSummaryContent()
+    74:75:public void setSummaryContent(java.lang.String)
+    77:77:public java.lang.String getUrl()
+    80:81:public void setUrl(java.lang.String)
+    85:94:public Knowledge(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
+    109:111:public java.lang.String getFullContentWithTitle()
+com.changheng.accountant.entity.KnowledgeList:
+    18:19:public void setKList(java.util.ArrayList)
+com.changheng.accountant.entity.NewsList:
+    12:12:public int getPageSize()
+    18:18:public int getNewsCount()
+    27:28:public void setNewslist(java.util.List)
+com.changheng.accountant.entity.Notice
+com.changheng.accountant.entity.Paper:
+    private long _id
+    private java.lang.String courseId
+    private java.lang.String jsonString
+    20:21:public void setTotalNum(int)
+    50:50:public long get_id()
+    53:54:public void set_id(long)
+    81:89:public Paper(java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,int)
+    120:120:public java.lang.String getCourseId()
+    123:124:public void setCourseId(java.lang.String)
+    129:130:public void setRuleList(java.util.ArrayList)
+    132:132:public java.lang.String getJsonString()
+    135:136:public void setJsonString(java.lang.String)
+com.changheng.accountant.entity.PaperList:
+    10:10:public int getPagesize()
+    25:26:public void setPaperlist(java.util.ArrayList)
+com.changheng.accountant.entity.ParseResult:
+    public static final int EMPTY_JSON_CODE
+    public static final int BAD_JSON_CODE
+    public static final java.lang.String EMPTY_JSON_MSG
+    public static final java.lang.String BAD_JSON_MSG
+    43:45:public void setEmptyResult()
+    48:50:public void setBadResult()
+    53:55:public void setResult(int,java.lang.String)
+    58:61:public void setResult(int,java.lang.String,java.lang.Object)
+com.changheng.accountant.entity.PlanAdapterData:
+    private java.lang.String title
+    private java.lang.String subTitle
+    private java.lang.String week
+    38:38:public java.lang.String getTitle()
+    41:42:public void setTitle(java.lang.String)
+    44:44:public java.lang.String getSubTitle()
+    47:48:public void setSubTitle(java.lang.String)
+    50:50:public java.lang.String getContent()
+    56:56:public java.lang.String getWeek()
+    59:60:public void setWeek(java.lang.String)
+    75:83:public PlanAdapterData(boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+com.changheng.accountant.entity.Playrecord
+com.changheng.accountant.entity.Problem
+com.changheng.accountant.entity.ReplyList:
+    11:11:public int getPageSize()
+    26:27:public void setReplyList(java.util.List)
+com.changheng.accountant.entity.UpdateDataEntity:
+    21:22:public void setPaperList(java.util.List)
+    27:28:public void setQList(java.util.List)
+    33:34:public void setRuleList(java.util.List)
+com.changheng.accountant.entity.User:
+    private long _id
+    private java.lang.String deviceId
+    private boolean access
+    25:25:public long get_id()
+    28:29:public void set_id(long)
+    58:62:public User(int,java.lang.String,java.lang.String)
+    64:64:public java.lang.String getLocation()
+    70:70:public java.lang.String getJointime()
+    79:80:public void setNickname(java.lang.String)
+    82:82:public java.lang.String getFace()
+    88:88:public java.lang.String getDeviceId()
+    91:92:public void setDeviceId(java.lang.String)
+    94:94:public boolean isAccess()
+    97:98:public void setAccess(boolean)
+    100:103:public User(int,boolean)
+    105:105:public java.lang.String getTruename()
+com.changheng.accountant.importdao.CourseDao:
+    private static final java.lang.String TAG
+    24:36:public java.util.ArrayList findAllClass()
+    127:143:public java.util.List findAllChapterByPid(java.lang.String)
+    151:172:public java.util.ArrayList findAllChapterByClass(java.util.List)
+com.changheng.accountant.importdao.CourseDao2:
+    private static final java.lang.String TAG
+    24:36:public java.util.ArrayList findAllClass()
+    127:143:public java.util.List findAllChapterByPid(java.lang.String)
+    151:172:public java.util.ArrayList findAllChapterByClass(java.util.List)
+com.changheng.accountant.importdao.PaperDao:
+    private static final java.lang.String TAG
+    public static final int pagesize
+    48:88:public void insertPaper(com.changheng.accountant.entity.Paper,java.util.List)
+    91:106:public void insertPracticePaper(com.changheng.accountant.entity.Paper)
+    108:124:public void updatePraticePaper(com.changheng.accountant.entity.Paper)
+    165:187:public java.util.List findPapers(java.lang.String)
+    192:219:public com.changheng.accountant.entity.PaperList findAllPapers(java.lang.String,int)
+    224:237:public com.changheng.accountant.entity.Paper findPaperById(java.lang.String)
+    274:296:public java.util.List findRules(java.lang.String)
+    347:373:public java.util.List findQuestionsByRuleId(java.lang.String)
+    377:410:public java.util.List findQuestionByPaperId(java.lang.String)
+    414:440:public java.util.List findQuestionById(java.lang.String)
+    451:481:public java.util.List findQuestionFromQids(java.lang.String)
+    495:523:public java.util.List findQuestionFromErrors(java.lang.String,java.lang.String)
+    528:556:public java.util.List findQuestionFromFavors(java.lang.String,java.lang.String)
+    568:600:public void saveOrUpdateRecord(com.changheng.accountant.entity.ExamRecord)
+    606:642:public com.changheng.accountant.entity.ExamRecord insertRecord(com.changheng.accountant.entity.ExamRecord,int)
+    649:674:public com.changheng.accountant.entity.ExamRecord findRecord(java.lang.String,java.lang.String)
+    678:701:public java.util.List findRecordsByUsername(java.lang.String)
+    705:717:public void deleteRecord(com.changheng.accountant.entity.ExamRecord)
+    725:739:public void updateTempAnswerForRecord(com.changheng.accountant.entity.ExamRecord)
+    742:777:public void insertError(com.changheng.accountant.entity.ExamErrorQuestion)
+    780:790:public int findErrorNumOfPractice(java.lang.String)
+    794:829:public void insertFavor(com.changheng.accountant.entity.ExamFavor)
+    834:867:public void insertNote(com.changheng.accountant.entity.ExamNote)
+    870:881:public java.lang.String findNoteContent(java.lang.String,java.lang.String)
+    886:897:public void deleteFavor(com.changheng.accountant.entity.ExamFavor)
+    900:911:public void deleteFavors(java.lang.String,java.lang.String)
+    915:926:public void moveOutError(java.lang.String,java.lang.String)
+    930:941:public void deleteErrors(java.lang.String,java.lang.String)
+    944:955:public void deleteNote(com.changheng.accountant.entity.ExamNote)
+    958:976:public java.util.List findNotes(java.lang.String,java.lang.String)
+    980:998:public java.util.List findFavors(java.lang.String)
+    1002:1029:public java.util.List findAdapterData(java.lang.String)
+    1039:1102:public java.util.List findErrorAdapterData(int)
+    1107:1124:public java.lang.StringBuilder findFavorQids(java.lang.String,java.lang.String)
+    1161:1175:public java.util.ArrayList findKnowledge(java.lang.String)
+    1181:1193:public java.lang.String findKnowledgeContent(java.lang.String)
+    1197:1214:public com.changheng.accountant.entity.ExamRecord findLastRecord(int)
+    1218:1243:public java.lang.String findSyncFavorData(java.lang.String)
+    1247:1273:public java.lang.String findSyncErrorData(java.lang.String)
+    1277:1320:public java.lang.String findSyncRecordData(java.lang.String)
+    1324:1448:public boolean syncIntoDB(com.changheng.accountant.entity.SyncData)
+    1453:1465:public java.lang.String getQidsUnderKnowledge(java.lang.String)
+    1470:1516:public java.util.ArrayList findQuestionOfKnowledge(java.util.ArrayList,java.lang.String)
+com.changheng.accountant.importdao.PaperDao2:
+    private static final java.lang.String TAG
+    public static final int pagesize
+    48:88:public void insertPaper(com.changheng.accountant.entity.Paper,java.util.List)
+    91:106:public void insertPracticePaper(com.changheng.accountant.entity.Paper)
+    108:124:public void updatePraticePaper(com.changheng.accountant.entity.Paper)
+    165:187:public java.util.List findPapers(java.lang.String)
+    192:219:public com.changheng.accountant.entity.PaperList findAllPapers(java.lang.String,int)
+    224:237:public com.changheng.accountant.entity.Paper findPaperById(java.lang.String)
+    274:296:public java.util.List findRules(java.lang.String)
+    347:373:public java.util.List findQuestionsByRuleId(java.lang.String)
+    377:410:public java.util.List findQuestionByPaperId(java.lang.String)
+    414:440:public java.util.List findQuestionById(java.lang.String)
+    451:481:public java.util.List findQuestionFromQids(java.lang.String)
+    495:523:public java.util.List findQuestionFromErrors(java.lang.String,java.lang.String)
+    528:556:public java.util.List findQuestionFromFavors(java.lang.String,java.lang.String)
+    568:600:public void saveOrUpdateRecord(com.changheng.accountant.entity.ExamRecord)
+    606:642:public com.changheng.accountant.entity.ExamRecord insertRecord(com.changheng.accountant.entity.ExamRecord,int)
+    649:674:public com.changheng.accountant.entity.ExamRecord findRecord(java.lang.String,java.lang.String)
+    678:701:public java.util.List findRecordsByUsername(java.lang.String)
+    705:717:public void deleteRecord(com.changheng.accountant.entity.ExamRecord)
+    725:739:public void updateTempAnswerForRecord(com.changheng.accountant.entity.ExamRecord)
+    742:777:public void insertError(com.changheng.accountant.entity.ExamErrorQuestion)
+    780:790:public int findErrorNumOfPractice(java.lang.String)
+    794:829:public void insertFavor(com.changheng.accountant.entity.ExamFavor)
+    834:867:public void insertNote(com.changheng.accountant.entity.ExamNote)
+    870:881:public java.lang.String findNoteContent(java.lang.String,java.lang.String)
+    886:897:public void deleteFavor(com.changheng.accountant.entity.ExamFavor)
+    900:911:public void deleteFavors(java.lang.String,java.lang.String)
+    915:926:public void moveOutError(java.lang.String,java.lang.String)
+    930:941:public void deleteErrors(java.lang.String,java.lang.String)
+    944:955:public void deleteNote(com.changheng.accountant.entity.ExamNote)
+    958:976:public java.util.List findNotes(java.lang.String,java.lang.String)
+    980:998:public java.util.List findFavors(java.lang.String)
+    1002:1029:public java.util.List findAdapterData(java.lang.String)
+    1039:1102:public java.util.List findErrorAdapterData(int)
+    1107:1124:public java.lang.StringBuilder findFavorQids(java.lang.String,java.lang.String)
+    1161:1175:public java.util.ArrayList findKnowledge(java.lang.String)
+    1181:1193:public java.lang.String findKnowledgeContent(java.lang.String)
+    1197:1214:public com.changheng.accountant.entity.ExamRecord findLastRecord(int)
+    1218:1243:public java.lang.String findSyncFavorData(java.lang.String)
+    1247:1273:public java.lang.String findSyncErrorData(java.lang.String)
+    1277:1320:public java.lang.String findSyncRecordData(java.lang.String)
+    1324:1448:public boolean syncIntoDB(com.changheng.accountant.entity.SyncData)
+    1453:1465:public java.lang.String getQidsUnderKnowledge(java.lang.String)
+    1470:1516:public java.util.ArrayList findQuestionOfKnowledge(java.util.ArrayList,java.lang.String)
+com.changheng.accountant.importdao.PlanDao2:
+    private com.changheng.accountant.db.PlanDBHelper dbhelper
+    private com.changheng.accountant.db.PlanDBManager dbManager
+    22:25:public PlanDao2(android.content.Context)
+    28:31:public PlanDao2(android.content.Context,java.lang.String)
+    138:161:public java.util.ArrayList findAllPlans(java.lang.String)
+    166:179:public java.util.ArrayList findKnowledge(java.lang.String)
+    183:196:public java.util.ArrayList findKnowledgeByChapter(java.lang.String)
+    200:212:public java.lang.String findKnowledgeContent(java.lang.String)
+com.changheng.accountant.importdao.UserDao
+com.changheng.accountant.importdao.UserDao2
+com.changheng.accountant.ui.AboutusFragment
+com.changheng.accountant.ui.AboutusFragment$SampleWebViewClient
+com.changheng.accountant.ui.BaseActivity:
+    43:43:public boolean isAllowFullScreen()
+    52:53:public void setAllowFullScreen(boolean)
+    56:57:public void setAllowDestroy(boolean)
+    60:62:public void setAllowDestroy(boolean,android.view.View)
+com.changheng.accountant.ui.BroadCast
+com.changheng.accountant.ui.ChapterPointerDetailActivity:
+    38:38:static synthetic void access$4(com.changheng.accountant.ui.ChapterPointerDetailActivity,android.app.ProgressDialog)
+com.changheng.accountant.ui.ChapterPointerDetailActivity$1:
+    63:146:public void onPracticeClick(java.lang.String)
+    60:60:static synthetic com.changheng.accountant.ui.ChapterPointerDetailActivity access$0(com.changheng.accountant.ui.ChapterPointerDetailActivity$1)
+com.changheng.accountant.ui.ChapterPointerDetailActivity$1$1
+com.changheng.accountant.ui.ChapterPointerDetailActivity$1$2
+com.changheng.accountant.ui.ChapterPointerDetailActivity$OnKnowledgePracticeListener
+com.changheng.accountant.ui.FeedBackActivity
+com.changheng.accountant.ui.ForumActivity:
+    private static final int PAGESIZE
+    private static final int FLAG_FROM_TOP
+    private static final int FLAG_FROM_BOTTOM
+    334:362:private void showPopWindow(android.view.View)
+    46:46:static synthetic android.widget.ImageView access$12(com.changheng.accountant.ui.ForumActivity)
+com.changheng.accountant.ui.ForumActivity$4
+com.changheng.accountant.ui.ForumPostDetailActivity:
+    private static final int PAGESIZE
+    private static final int MAX_TEXT_LENGTH
+com.changheng.accountant.ui.ForumPostDetailActivity$5:
+    287:294:public void onImageClick(java.lang.String)
+com.changheng.accountant.ui.ForumPostDetailActivity$SampleItem:
+    561:563:public ForumPostDetailActivity$SampleItem(com.changheng.accountant.ui.ForumPostDetailActivity)
+com.changheng.accountant.ui.ForumPostPubActivity:
+    private com.changheng.accountant.adapter.GridViewFaceAdapter mGVFaceAdapter
+    private android.widget.GridView mGridView
+    private static final int MAX_TEXT_LENGTH
+    private static final int MAX_TITLE_LENGTH
+    305:324:private void initGridView()
+    327:329:private void showIMM()
+    332:335:private void showFace()
+    338:341:private void hideFace()
+    344:355:private void showOrHideIMM()
+    53:53:static synthetic com.changheng.accountant.adapter.GridViewFaceAdapter access$12(com.changheng.accountant.ui.ForumPostPubActivity)
+com.changheng.accountant.ui.ForumPostPubActivity$7
+com.changheng.accountant.ui.InfoDetailActivity:
+    291:292:private void print(java.lang.String)
+com.changheng.accountant.ui.InfoDetailActivity$4:
+    101:104:public void onImageClick(java.lang.String)
+com.changheng.accountant.ui.InformationListActivity:
+    private static final int PAGESIZE
+com.changheng.accountant.ui.InformationMainActivity:
+    public static final int INFO_OUTLINE
+    public static final int INFO_GUIDE
+    public static final int INFO_INFORMATION
+    public static final int INFO_EXPERIENCE
+    public static final int INFO_REVIEW
+    public static final int INFO_TEACHER
+com.changheng.accountant.ui.KnowledgeTodayActivity:
+    public static final java.lang.String DB_NAME
+    public static final java.lang.String PACKAGE_NAME
+com.changheng.accountant.ui.LoginActivity:
+    public static final int LOGIN_OTHER
+    public static final int LOGIN_MAIN
+    public static final int LOGIN_SETTING
+    public static final int LOGIN_POST_PUB
+    public static final int LOGIN_POST_REPLY
+com.changheng.accountant.ui.MainActivity:
+    public static final int MAIN_SETTING
+    public static final int MAIN_INDEX
+    public static final int MAIN_ACCOUNT
+    public static final int MAIN_ABOUT
+    327:327:public com.changheng.accountant.AppContext getAppContext()
+    431:462:private void foreachUserNotice()
+    430:430:static synthetic void access$5(com.changheng.accountant.ui.MainActivity)
+com.changheng.accountant.ui.MainActivity$4
+com.changheng.accountant.ui.MainActivity$5
+com.changheng.accountant.ui.MainFragment:
+    private android.widget.RelativeLayout time_tip
+com.changheng.accountant.ui.OnWebViewImageListener
+com.changheng.accountant.ui.QuestionDoExamActivity:
+    private android.widget.LinearLayout examAnswerLayout2
+    private android.widget.LinearLayout examAnswerLayout3
+com.changheng.accountant.ui.QuestionDoExamActivity1:
+    553:566:private void gotoChooseActivity2()
+    744:840:private void submitPaper()
+com.changheng.accountant.ui.QuestionDoExamActivity1$SampleItem:
+    1150:1152:public QuestionDoExamActivity1$SampleItem(com.changheng.accountant.ui.QuestionDoExamActivity1)
+com.changheng.accountant.ui.QuestionDoExamActivity2:
+    950:973:private void secondInit()
+com.changheng.accountant.ui.QuestionPraticeInfoActivity:
+    320:376:private void refreshRule(java.util.List)
+com.changheng.accountant.ui.QuestionWriteNoteActivity:
+    private static final int maxLength
+com.changheng.accountant.ui.SetTimeActivity:
+    58:58:static synthetic void access$0(com.changheng.accountant.ui.SetTimeActivity,android.app.ProgressDialog)
+    59:59:static synthetic android.widget.LinearLayout access$7(com.changheng.accountant.ui.SetTimeActivity)
+com.changheng.accountant.ui.SetTimeActivity$GetDataTask
+com.changheng.accountant.ui.SettingFragment:
+    260:270:private void share()
+com.changheng.accountant.ui.StartActivity:
+    private static final java.lang.String SHAREDPREFERENCES_NAME
+com.changheng.accountant.ui.UIHelper:
+    public static final int LISTVIEW_ACTION_INIT
+    public static final int LISTVIEW_ACTION_REFRESH
+    public static final int LISTVIEW_ACTION_SCROLL
+    public static final int LISTVIEW_ACTION_CHANGE_CATALOG
+    public static final int LISTVIEW_DATA_MORE
+    public static final int LISTVIEW_DATA_LOADING
+    public static final int LISTVIEW_DATA_FULL
+    public static final int LISTVIEW_DATA_EMPTY
+    public static final int LISTVIEW_DATATYPE_NEWS
+    public static final int LISTVIEW_DATATYPE_BLOG
+    public static final int LISTVIEW_DATATYPE_POST
+    public static final int LISTVIEW_DATATYPE_TWEET
+    public static final int LISTVIEW_DATATYPE_ACTIVE
+    public static final int LISTVIEW_DATATYPE_MESSAGE
+    public static final int LISTVIEW_DATATYPE_COMMENT
+    public static final int REQUEST_CODE_FOR_RESULT
+    public static final int REQUEST_CODE_FOR_REPLY
+    public static final java.lang.String WEB_STYLE
+    55:55:public UIHelper()
+    108:108:public static void showQuestionDetail(android.content.Context,int)
+    120:120:public static void showQuestionListByTag(android.content.Context,java.lang.String)
+    130:130:public static void showQuestionPub(android.content.Context)
+    141:146:public static void showShareMore(android.app.Activity,java.lang.String,java.lang.String)
+    245:245:public static void showImageDialog(android.content.Context,java.lang.String)
+    248:251:public static void showImageZoomDialog(android.content.Context,java.lang.String)
+    261:261:public static void showSearch(android.content.Context)
+    269:271:public static void showUserInfo(android.app.Activity)
+    281:283:public static void showUserFace(android.widget.ImageView,java.lang.String)
+    295:351:public static void showLoadImage(android.widget.ImageView,java.lang.String,java.lang.String)
+    361:368:public static void openBrowser(android.content.Context,java.lang.String)
+    376:376:public static android.webkit.WebViewClient getWebViewClient()
+    394:394:public static android.text.TextWatcher getTextWatcher(android.app.Activity,java.lang.String)
+    467:473:public static android.text.SpannableString parseActiveReply(java.lang.String,java.lang.String)
+    485:491:public static android.text.SpannableString parseQuoteSpan(java.lang.String,java.lang.String)
+    508:509:public static void ToastMessage(android.content.Context,java.lang.String,int)
+    518:518:public static android.view.View$OnClickListener finish(android.app.Activity)
+    531:533:public static void showAbout(android.content.Context)
+    541:543:public static void showFeedBack(android.content.Context)
+    551:559:public static void changeSettingIsLoadImage(android.app.Activity)
+    562:564:public static void changeSettingIsLoadImage(android.app.Activity,boolean)
+    572:595:public static void clearAppCache(android.app.Activity)
+    688:696:public static void addWebImageShow(android.content.Context,android.webkit.WebView)
+    714:721:public static void sendBroadCast(android.content.Context,com.changheng.accountant.entity.Notice)
+com.changheng.accountant.ui.UIHelper$1
+com.changheng.accountant.ui.UIHelper$12
+com.changheng.accountant.ui.UIHelper$2
+com.changheng.accountant.ui.UIHelper$3
+com.changheng.accountant.ui.UIHelper$4
+com.changheng.accountant.ui.UIHelper$5
+com.changheng.accountant.ui.UIHelper$6
+com.changheng.accountant.ui.UIHelper$7
+com.changheng.accountant.ui.UserInfoFragment:
+    private static final int CROP
+    445:464:private android.net.Uri getCameraTempFile()
+    473:491:public void imageChooseItem(java.lang.CharSequence[])
+    499:504:private void startImagePick()
+    512:516:private void startActionCamera()
+    498:498:static synthetic void access$14(com.changheng.accountant.ui.UserInfoFragment)
+    511:511:static synthetic void access$15(com.changheng.accountant.ui.UserInfoFragment)
+com.changheng.accountant.ui.UserInfoFragment$4
+com.changheng.accountant.util.ApiClient:
+    public static final java.lang.String UTF_8
+    public static final java.lang.String DESC
+    public static final java.lang.String ASC
+    private static final int TIMEOUT_CONNECTION
+    private static final int TIMEOUT_SOCKET
+    private static final int RETRY_TIME
+    59:59:public ApiClient()
+    73:74:public static void cleanCookie()
+    130:137:private static org.apache.commons.httpclient.methods.PostMethod getHttpPost(java.lang.String,java.lang.String,java.lang.String)
+    141:154:private static java.lang.String _MakeURL(java.lang.String,java.util.Map)
+    257:324:private static java.lang.String http_get(com.changheng.accountant.AppContext,java.lang.String)
+    339:425:private static java.io.InputStream _post(com.changheng.accountant.AppContext,java.lang.String,java.util.Map,java.util.Map)
+    539:638:private static java.io.InputStream _post_stream(com.changheng.accountant.AppContext,java.lang.String,java.util.Map,java.util.Map)
+    771:783:public static java.io.InputStream login(com.changheng.accountant.AppContext,java.lang.String,java.lang.String,java.lang.String)
+    789:802:public static java.lang.String login_get(com.changheng.accountant.AppContext,java.lang.String,java.lang.String,java.lang.String)
+    843:864:public static java.lang.String register_get(com.changheng.accountant.AppContext,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    871:886:public static java.io.InputStream register(com.changheng.accountant.AppContext,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    921:926:public static java.lang.String checkUsername(com.changheng.accountant.AppContext,java.lang.String)
+    1032:1038:public static java.io.InputStream getKnowledgeQuestionList(com.changheng.accountant.AppContext,java.lang.String,java.lang.String)
+    1108:1123:public static com.changheng.accountant.entity.ParseResult pubTweet(com.changheng.accountant.AppContext,com.changheng.accountant.entity.ForumPost)
+    1276:1281:public static com.changheng.accountant.entity.Notice getUserNotice(com.changheng.accountant.AppContext,int)
+com.changheng.accountant.util.AreaUtils
+com.changheng.accountant.util.BitmapManager:
+    50:51:public void setDefaultBmp(android.graphics.Bitmap)
+    69:70:public void loadBitmap(java.lang.String,android.widget.ImageView,android.graphics.Bitmap)
+com.changheng.accountant.util.BrightnessUtil:
+    public static final int MAX_BRIGHTNESS
+    11:11:public BrightnessUtil()
+com.changheng.accountant.util.CompressUtil:
+    16:16:public CompressUtil()
+    76:122:public static void upzipFile(java.lang.String,java.lang.String)
+com.changheng.accountant.util.Constant
+com.changheng.accountant.util.CyptoUtils:
+    public static final java.lang.String ALGORITHM_DES
+    15:15:public CyptoUtils()
+com.changheng.accountant.util.DBDownloadManager:
+    private static final int DOWN_NOSDCARD
+    private static final int DOWN_UPDATE
+    private static final int DOWN_OVER
+    private static final int DIALOG_TYPE_LATEST
+    private static final int DIALOG_TYPE_FAIL
+    private com.changheng.accountant.entity.AppUpdate mUpdate
+    private int currentCode
+    265:272:private void installApk()
+com.changheng.accountant.util.FileUtils:
+    21:21:public FileUtils()
+    29:41:public static void write(android.content.Context,java.lang.String,java.lang.String)
+    52:57:public static java.lang.String read(android.content.Context,java.lang.String)
+    62:75:private static java.lang.String readInStream(java.io.FileInputStream)
+    79:83:public static java.io.File createFile(java.lang.String,java.lang.String)
+    96:130:public static boolean writeFile(byte[],java.lang.String,java.lang.String)
+    152:156:public static java.lang.String getFileNameNoFormat(java.lang.String)
+    181:187:public static long getFileSize(java.lang.String)
+    198:205:public static java.lang.String getFileSize(long)
+    263:272:public long getFileList(java.io.File)
+    276:283:public static byte[] toBytes(java.io.InputStream)
+    294:301:public static boolean checkFileExists(java.lang.String)
+    311:311:public static boolean checkFilePathExists(java.lang.String)
+    320:335:public static long getFreeDiskSpace()
+    346:353:public static boolean createDirectory(java.lang.String)
+    362:368:public static boolean checkSaveLocationExists()
+    379:408:public static boolean deleteDirectory(java.lang.String)
+    419:439:public static boolean deleteFile(java.lang.String)
+    450:460:public static int deleteBlankPath(java.lang.String)
+    471:472:public static boolean reNamePath(java.lang.String,java.lang.String)
+    481:489:public static boolean deleteFileWithPath(java.lang.String)
+    498:498:public static java.lang.String getSDRoot()
+    509:520:public static java.util.List listPath(java.lang.String)
+    533:540:public static com.changheng.accountant.util.FileUtils$PathStatus createPath(java.lang.String)
+    550:552:public static java.lang.String getPathName(java.lang.String)
+com.changheng.accountant.util.FileUtils$PathStatus
+com.changheng.accountant.util.HttpConnectUtil
+com.changheng.accountant.util.ImageUtils:
+    public static final java.lang.String SDCARD_MNT
+    public static final java.lang.String SDCARD
+    public static final int REQUEST_CODE_GETIMAGE_BYSDCARD
+    public static final int REQUEST_CODE_GETIMAGE_BYCAMERA
+    public static final int REQUEST_CODE_GETIMAGE_BYCROP
+    45:45:public ImageUtils()
+    181:196:public static android.graphics.Bitmap getBitmapByFile(java.io.File)
+    218:218:public static java.lang.String getCamerPath()
+    314:330:public static java.lang.String getLatestImage(android.app.Activity)
+    411:428:public static android.graphics.Bitmap scaleBitmap(android.graphics.Bitmap)
+    440:481:public static android.graphics.Bitmap reDrawBitMap(android.app.Activity,android.graphics.Bitmap)
+    491:499:public static android.graphics.Bitmap drawableToBitmap(android.graphics.drawable.Drawable)
+    513:530:public static android.graphics.Bitmap getRoundedCornerBitmap(android.graphics.Bitmap,float)
+    540:571:public static android.graphics.Bitmap createReflectionImageWithOrigin(android.graphics.Bitmap)
+    581:582:public static android.graphics.drawable.Drawable bitmapToDrawable(android.graphics.Bitmap)
+    592:609:public static java.lang.String getImageType(java.io.File)
+    620:628:public static java.lang.String getImageType(java.io.InputStream)
+    640:652:public static java.lang.String getImageType(byte[])
+    656:659:private static boolean isJPEG(byte[])
+    663:666:private static boolean isGIF(byte[])
+    671:674:private static boolean isPNG(byte[])
+    680:683:private static boolean isBMP(byte[])
+    687:691:public static java.io.InputStream Drawable2InputStream(android.graphics.drawable.Drawable)
+com.changheng.accountant.util.JsonParseUtil
+com.changheng.accountant.util.MediaUtils:
+    10:10:public MediaUtils()
+    78:115:public static java.lang.String getMIMEType(java.lang.String)
+com.changheng.accountant.util.MethodsCompat:
+    20:20:public MethodsCompat()
+    24:25:public static void overridePendingTransition(android.app.Activity,int,int)
+    48:51:public static void recreate(android.app.Activity)
+    55:58:public static void setLayerType(android.view.View,int,android.graphics.Paint)
+    62:65:public static void setUiOptions(android.view.Window,int)
+com.changheng.accountant.util.QuestionContentDecoder:
+    12:12:public QuestionContentDecoder()
+    36:44:public static java.lang.String getContent(java.lang.String,int)
+com.changheng.accountant.util.StringUtils:
+    16:16:public StringUtils()
+    131:141:public static boolean isToday(java.lang.String)
+    173:175:public static boolean isEmail(java.lang.String)
+    211:213:public static float toFloat(java.lang.String)
+    228:228:public static java.lang.String toSelfOrEmpty(java.lang.String)
+    268:289:public static java.lang.String randomQids(java.lang.String,int)
+    316:316:public static boolean isContainsChinese(java.lang.String)
+    343:349:public static boolean compareDate(java.lang.String)
+com.changheng.accountant.util.URLs
+com.changheng.accountant.util.UpdateDataManager:
+    private static final int DOWN_NOSDCARD
+    private static final int DOWN_UPDATE
+    private static final int DOWN_OVER
+    private static final int DIALOG_TYPE_LATEST
+    private static final int DIALOG_TYPE_FAIL
+    private java.lang.String addTime
+    400:408:private void installApk()
+com.changheng.accountant.util.UpdateManager:
+    private static final int DOWN_NOSDCARD
+    private static final int DOWN_UPDATE
+    private static final int DOWN_OVER
+    private static final int DOWN_ERROR
+    private static final int DIALOG_TYPE_LATEST
+    private static final int DIALOG_TYPE_FAIL
+com.changheng.accountant.util.Utility
+com.changheng.accountant.util.XMLParseUtil:
+    public static final java.lang.String UTF8
+    public static final java.lang.String NODE_ROOT
+    44:44:public XMLParseUtil()
+    499:499:private java.lang.String htmlDecode(java.lang.String)
+    943:971:public static com.changheng.accountant.entity.Notice parseNotice(java.io.InputStream)
+com.changheng.accountant.util.XmlCreator:
+    13:13:public XmlCreator()
+com.changheng.accountant.view.AnswerSettingLayout:
+    private android.widget.TextView paper_num
+    private android.view.View station
+    private android.widget.ImageView title_image
+    private android.widget.TextView title_info
+    private android.widget.ImageView hasnew
+com.changheng.accountant.view.AnswerSettingLayout$ItemClickListerner
+com.changheng.accountant.view.BadgeView:
+    public static final int POSITION_TOP_LEFT
+    public static final int POSITION_TOP_RIGHT
+    public static final int POSITION_BOTTOM_LEFT
+    public static final int POSITION_BOTTOM_RIGHT
+    public static final int POSITION_CENTER
+    private static final int DEFAULT_MARGIN_DIP
+    private static final int DEFAULT_LR_PADDING_DIP
+    private static final int DEFAULT_CORNER_RADIUS_DIP
+    private static final int DEFAULT_POSITION
+    private static final int DEFAULT_TEXT_COLOR
+    63:64:public BadgeView(android.content.Context)
+    67:68:public BadgeView(android.content.Context,android.util.AttributeSet)
+    93:94:public BadgeView(android.content.Context,android.widget.TabWidget,int)
+    97:98:public BadgeView(android.content.Context,android.util.AttributeSet,int)
+    192:193:public void show(boolean)
+    201:202:public void show(android.view.animation.Animation)
+    218:219:public void hide(boolean)
+    227:228:public void hide(android.view.animation.Animation)
+    235:236:public void toggle()
+    244:245:public void toggle(boolean)
+    254:255:public void toggle(android.view.animation.Animation,android.view.animation.Animation)
+    282:287:private void toggle(boolean,android.view.animation.Animation,android.view.animation.Animation)
+    296:309:public int increment(int)
+    319:319:public int decrement(int)
+    438:440:public void setBadgeMargin(int,int)
+com.changheng.accountant.view.ImageTextView:
+    private boolean hasMeasured
+    55:69:private void calculateWidth()
+    28:28:static synthetic boolean access$0(com.changheng.accountant.view.ImageTextView)
+    24:24:static synthetic android.view.View access$1(com.changheng.accountant.view.ImageTextView)
+    27:27:static synthetic void access$2(com.changheng.accountant.view.ImageTextView,int)
+    27:27:static synthetic void access$3(com.changheng.accountant.view.ImageTextView,int)
+    28:28:static synthetic void access$4(com.changheng.accountant.view.ImageTextView,boolean)
+com.changheng.accountant.view.ImageTextView$1
+com.changheng.accountant.view.KeyboardListenRelativeLayout:
+    public static final byte KEYBOARD_STATE_SHOW
+    public static final byte KEYBOARD_STATE_HIDE
+    public static final byte KEYBOARD_STATE_INIT
+com.changheng.accountant.view.MyCheckBox:
+    16:17:public MyCheckBox(android.content.Context,android.util.AttributeSet)
+    20:21:public MyCheckBox(android.content.Context,android.util.AttributeSet,int)
+com.changheng.accountant.view.MyRadioButton
+com.changheng.accountant.view.NewDataToast:
+    23:24:public NewDataToast(android.content.Context)
+    54:55:public void setIsSound(boolean)
+com.changheng.accountant.view.OptionLayout:
+    public static final int RADIO_BUTTON
+    public static final int CHECK_BOX
+    51:52:public OptionLayout(android.content.Context)
+    84:84:public boolean isIsclick()
+    88:90:public void reSetButtonDrawable(int)
+    112:119:public boolean setCheckBoxClicked()
+com.changheng.accountant.view.PinnedHeaderListView:
+    private static final int MAX_ALPHA
+com.changheng.accountant.view.PinnedHeaderListView$PinnedHeaderAdapter:
+    public static final int PINNED_HEADER_GONE
+    public static final int PINNED_HEADER_VISIBLE
+    public static final int PINNED_HEADER_PUSHED_UP
+com.changheng.accountant.view.QuestionMaterialLayout:
+    private android.webkit.WebView testView
+    public static final int SNAP_VELOCITY
+    private android.view.View content
+    245:246:private void scrollToMenu()
+com.changheng.accountant.view.ScrollLayout:
+    private static final java.lang.String TAG
+    private static final int TOUCH_STATE_REST
+    private static final int TOUCH_STATE_SCROLLING
+    private static final int SNAP_VELOCITY
+com.changheng.accountant.view.SectionListAdapter:
+    private android.view.View transparentSectionView
+    149:149:public synchronized java.lang.String getSectionName(int)
+    177:179:protected void setSectionText(java.lang.String,android.view.View)
+    183:187:protected synchronized void replaceSectionViewsInMaps(java.lang.String,android.view.View)
+    304:304:public int getRealPosition(int)
+    311:311:public synchronized android.view.View getTransparentSectionView()
+    316:316:protected void sectionClicked(java.lang.String)
+    328:329:public void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)
+com.changheng.accountant.view.SectionListAdapter$ViewHolder:
+    android.widget.TextView title
+    android.widget.TextView subTitle
+    android.widget.TextView content
+com.changheng.accountant.view.wheel.ArrayWheelAdapter
+com.changheng.accountant.view.wheel.NumericWheelAdapter:
+    public static final int DEFAULT_MAX_VALUE
+    private static final int DEFAULT_MIN_VALUE
+com.changheng.accountant.view.wheel.WheelView:
+    private static final int SCROLLING_DURATION
+    private static final int MIN_DELTA_FOR_SCROLLING
+    private static final int VALUE_TEXT_COLOR
+    private static final int ITEMS_TEXT_COLOR
+    private static final int ADDITIONAL_ITEM_HEIGHT
+    private static final int ADDITIONAL_ITEMS_SPACE
+    private static final int LABEL_OFFSET
+    private static final int PADDING
+    private static final int DEF_VISIBLE_ITEMS
+    256:257:public void addChangingListener(com.changheng.accountant.view.wheel.OnWheelChangedListener)
+    264:265:public void removeChangingListener(com.changheng.accountant.view.wheel.OnWheelChangedListener)
+    283:284:public void addScrollingListener(com.changheng.accountant.view.wheel.OnWheelScrollListener)
+    291:292:public void removeScrollingListener(com.changheng.accountant.view.wheel.OnWheelScrollListener)
+    368:368:public boolean isCyclic()
+com.google.gson.Cache:
+    public abstract java.lang.Object removeElement(java.lang.Object)
+com.google.gson.CamelCaseSeparatorNamingPolicy
+com.google.gson.CircularReferenceException:
+    private static final long serialVersionUID
+com.google.gson.CompositionFieldNamingPolicy
+com.google.gson.DefaultConstructorAllocator:
+    42:42:final boolean isInCache(java.lang.Class)
+com.google.gson.DefaultTypeAdapters:
+    61:1034:DefaultTypeAdapters()
+    251:251:static com.google.gson.ParameterizedTypeHandlerMap getDefaultSerializers()
+com.google.gson.DefaultTypeAdapters$DefaultDateTypeAdapter:
+    318:319:DefaultTypeAdapters$DefaultDateTypeAdapter(java.lang.String)
+    322:323:DefaultTypeAdapters$DefaultDateTypeAdapter(int)
+    326:328:public DefaultTypeAdapters$DefaultDateTypeAdapter(int,int)
+com.google.gson.DefaultTypeAdapters$GregorianCalendarTypeAdapter:
+    private static final java.lang.String YEAR
+    private static final java.lang.String MONTH
+    private static final java.lang.String DAY_OF_MONTH
+    private static final java.lang.String HOUR_OF_DAY
+    private static final java.lang.String MINUTE
+    private static final java.lang.String SECOND
+com.google.gson.DelegatingJsonElementVisitor
+com.google.gson.ExposeAnnotationDeserializationExclusionStrategy
+com.google.gson.ExposeAnnotationSerializationExclusionStrategy
+com.google.gson.FieldAttributes:
+    private static final java.lang.String MAX_CACHE_PROPERTY_NAME
+    89:89:public java.lang.Class getDeclaringClass()
+    221:221:java.lang.reflect.Field getFieldObject()
+com.google.gson.FieldNamingPolicy
+com.google.gson.FieldNamingStrategy
+com.google.gson.FieldNamingStrategy2Adapter
+com.google.gson.Gson:
+    static final boolean DEFAULT_JSON_NON_EXECUTABLE
+    private static final java.lang.String JSON_NON_EXECUTABLE_PREFIX
+    194:197:public com.google.gson.JsonElement toJsonTree(java.lang.Object)
+    279:284:public void toJson(java.lang.Object,java.lang.Appendable)
+    303:305:public void toJson(java.lang.Object,java.lang.reflect.Type,java.lang.Appendable)
+    313:314:public void toJson(java.lang.Object,java.lang.reflect.Type,com.google.gson.stream.JsonWriter)
+    440:443:public java.lang.Object fromJson(java.io.Reader,java.lang.Class)
+    521:522:public java.lang.Object fromJson(com.google.gson.JsonElement,java.lang.Class)
+com.google.gson.GsonBuilder
+com.google.gson.InnerClassExclusionStrategy
+com.google.gson.JsonArray:
+    63:64:public void addAll(com.google.gson.JsonArray)
+    70:71:void reverse()
+com.google.gson.JsonElement:
+    129:132:public com.google.gson.JsonNull getAsJsonNull()
+com.google.gson.JsonElementVisitor
+com.google.gson.JsonIOException:
+    private static final long serialVersionUID
+    34:35:public JsonIOException(java.lang.String,java.lang.Throwable)
+com.google.gson.JsonObject:
+    71:71:public com.google.gson.JsonElement remove(java.lang.String)
+    82:83:public void addProperty(java.lang.String,java.lang.String)
+    104:105:public void addProperty(java.lang.String,java.lang.Boolean)
+    115:116:public void addProperty(java.lang.String,java.lang.Character)
+    145:145:public boolean has(java.lang.String)
+    169:169:public com.google.gson.JsonPrimitive getAsJsonPrimitive(java.lang.String)
+    179:179:public com.google.gson.JsonArray getAsJsonArray(java.lang.String)
+    189:189:public com.google.gson.JsonObject getAsJsonObject(java.lang.String)
+com.google.gson.JsonParseException:
+    static final long serialVersionUID
+com.google.gson.JsonParser
+com.google.gson.JsonSerializationContext:
+    public abstract com.google.gson.JsonElement serialize(java.lang.Object)
+com.google.gson.JsonSerializationContextDefault:
+    46:49:public com.google.gson.JsonElement serialize(java.lang.Object)
+com.google.gson.JsonStreamParser
+com.google.gson.JsonSyntaxException:
+    private static final long serialVersionUID
+    30:31:public JsonSyntaxException(java.lang.String)
+com.google.gson.JsonTreeNavigator
+com.google.gson.LowerCamelCaseSeparatorNamingPolicy
+com.google.gson.LowerCaseNamingPolicy
+com.google.gson.LruCache:
+    private static final long serialVersionUID
+    50:50:public synchronized java.lang.Object removeElement(java.lang.Object)
+com.google.gson.MapAsArrayTypeAdapter
+com.google.gson.MemoryRefStack:
+    55:55:public boolean isEmpty()
+    65:65:public com.google.gson.ObjectTypePair peek()
+com.google.gson.ModifyFirstLetterNamingPolicy
+com.google.gson.ModifyFirstLetterNamingPolicy$LetterModifier
+com.google.gson.ObjectTypePair:
+    142:142:public boolean isPreserveType()
+com.google.gson.Primitives:
+    34:34:private Primitives()
+    82:82:public static boolean isWrapperType(java.lang.Class)
+com.google.gson.Streams:
+    30:153:Streams()
+com.google.gson.UpperCamelCaseSeparatorNamingPolicy
+com.google.gson.UpperCaseNamingPolicy
+com.google.gson.VersionConstants
+com.google.gson.VersionExclusionStrategy
+com.google.gson.annotations.Expose
+com.google.gson.annotations.Since
+com.google.gson.annotations.Until
+com.google.gson.internal.$Gson$Preconditions:
+    32:32:public $Gson$Preconditions()
+com.google.gson.internal.$Gson$Types:
+    44:44:private $Gson$Types()
+com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl:
+    private static final long serialVersionUID
+com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl:
+    private static final long serialVersionUID
+com.google.gson.internal.$Gson$Types$WildcardTypeImpl:
+    private static final long serialVersionUID
+com.google.gson.reflect.TypeToken:
+    72:76:TypeToken(java.lang.reflect.Type)
+    96:96:public final java.lang.Class getRawType()
+    114:114:public boolean isAssignableFrom(java.lang.Class)
+    125:142:public boolean isAssignableFrom(java.lang.reflect.Type)
+    155:155:public boolean isAssignableFrom(com.google.gson.reflect.TypeToken)
+    163:180:private static boolean isAssignableFrom(java.lang.reflect.Type,java.lang.reflect.GenericArrayType)
+    190:233:private static boolean isAssignableFrom(java.lang.reflect.Type,java.lang.reflect.ParameterizedType,java.util.Map)
+    242:252:private static boolean typeEquals(java.lang.reflect.ParameterizedType,java.lang.reflect.ParameterizedType,java.util.Map)
+    259:267:private static varargs java.lang.AssertionError buildUnexpectedTypeError(java.lang.reflect.Type,java.lang.Class[])
+    276:276:private static boolean matches(java.lang.reflect.Type,java.lang.reflect.Type,java.util.Map)
+    299:299:public static com.google.gson.reflect.TypeToken get(java.lang.reflect.Type)
+    306:306:public static com.google.gson.reflect.TypeToken get(java.lang.Class)
+com.google.gson.stream.JsonReader:
+    526:542:public double nextDouble()
+    556:577:public long nextLong()
+    591:612:public int nextInt()
+    633:647:public void skipValue()
+com.google.gson.stream.JsonWriter:
+    362:367:public com.google.gson.stream.JsonWriter value(double)
+    376:378:public com.google.gson.stream.JsonWriter value(long)
+    408:409:public void flush()
+com.google.gson.stream.MalformedJsonException:
+    private static final long serialVersionUID
+    33:37:public MalformedJsonException(java.lang.String,java.lang.Throwable)
+    39:43:public MalformedJsonException(java.lang.Throwable)
+com.handmark.pulltorefresh.library.ILoadingLayout:
+    public abstract void setTextTypeface(android.graphics.Typeface)
+com.handmark.pulltorefresh.library.IPullToRefresh
+com.handmark.pulltorefresh.library.LoadingLayoutProxy:
+    69:72:public void setTextTypeface(android.graphics.Typeface)
+com.handmark.pulltorefresh.library.OverscrollHelper:
+    static final java.lang.String LOG_TAG
+    static final float DEFAULT_OVERSCROLL_SCALE
+    26:26:public OverscrollHelper()
+com.handmark.pulltorefresh.library.PullToRefreshBase:
+    static final boolean DEBUG
+    static final boolean USE_HW_LAYERS
+    static final java.lang.String LOG_TAG
+    static final float FRICTION
+    public static final int SMOOTH_SCROLL_DURATION_MS
+    public static final int SMOOTH_SCROLL_LONG_DURATION_MS
+    static final int DEMO_SCROLL_INTERVAL
+    static final java.lang.String STATE_STATE
+    static final java.lang.String STATE_MODE
+    static final java.lang.String STATE_CURRENT_MODE
+    static final java.lang.String STATE_SCROLLING_REFRESHING_ENABLED
+    static final java.lang.String STATE_SHOW_REFRESHING_VIEW
+    static final java.lang.String STATE_SUPER
+    146:154:public final boolean demo()
+    201:201:public final boolean isDisableScrollingWhileRefreshing()
+    222:222:public final boolean isScrollingWhileRefreshingEnabled()
+    412:414:public void setLoadingDrawable(android.graphics.drawable.Drawable,com.handmark.pulltorefresh.library.PullToRefreshBase$Mode)
+    480:481:public final void setRefreshing()
+    503:505:public void setRefreshingLabel(java.lang.CharSequence,com.handmark.pulltorefresh.library.PullToRefreshBase$Mode)
+    1016:1017:protected final void smoothScrollToLonger(int)
+    1280:1287:private final void smoothScrollToAndBack(int)
+    1247:1247:static synthetic void access$5(com.handmark.pulltorefresh.library.PullToRefreshBase,int,long,long,com.handmark.pulltorefresh.library.PullToRefreshBase$OnSmoothScrollFinishedListener)
+com.handmark.pulltorefresh.library.PullToRefreshBase$3
+com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+com.handmark.pulltorefresh.library.PullToRefreshExpandableListView$InternalExpandableListView
+com.handmark.pulltorefresh.library.PullToRefreshExpandableListView$InternalExpandableListViewSDK9
+com.handmark.pulltorefresh.library.PullToRefreshGridView
+com.handmark.pulltorefresh.library.PullToRefreshGridView$InternalGridView
+com.handmark.pulltorefresh.library.PullToRefreshGridView$InternalGridViewSDK9
+com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView
+com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView$InternalHorizontalScrollViewSDK9
+com.handmark.pulltorefresh.library.PullToRefreshScrollView
+com.handmark.pulltorefresh.library.PullToRefreshScrollView$InternalScrollViewSDK9
+com.handmark.pulltorefresh.library.PullToRefreshWebView$InternalWebViewSDK9:
+    static final int OVERSCROLL_FUZZY_THRESHOLD
+    static final float OVERSCROLL_SCALE_FACTOR
+com.handmark.pulltorefresh.library.R:
+    9:9:public R()
+com.handmark.pulltorefresh.library.R$anim:
+    10:10:public R$anim()
+com.handmark.pulltorefresh.library.R$attr
+com.handmark.pulltorefresh.library.R$dimen:
+    37:37:public R$dimen()
+com.handmark.pulltorefresh.library.R$drawable:
+    44:44:public R$drawable()
+com.handmark.pulltorefresh.library.R$id:
+    51:51:public R$id()
+com.handmark.pulltorefresh.library.R$layout:
+    70:70:public R$layout()
+com.handmark.pulltorefresh.library.R$string:
+    74:74:public R$string()
+com.handmark.pulltorefresh.library.R$styleable:
+    82:82:public R$styleable()
+com.handmark.pulltorefresh.library.extras.PullToRefreshWebView2
+com.handmark.pulltorefresh.library.extras.PullToRefreshWebView2$JsValueCallback
+com.handmark.pulltorefresh.library.extras.SoundPullEventListener
+com.handmark.pulltorefresh.library.internal.EmptyViewMethodAccessor:
+    public abstract void setEmptyView(android.view.View)
+com.handmark.pulltorefresh.library.internal.FlipLoadingLayout:
+    static final int FLIP_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.IndicatorLayout:
+    static final int DEFAULT_ROTATION_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.LoadingLayout:
+    static final java.lang.String LOG_TAG
+com.handmark.pulltorefresh.library.internal.RotateLoadingLayout:
+    static final int ROTATION_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.Utils:
+    static final java.lang.String LOG_TAG
+    5:5:public Utils()
+com.handmark.pulltorefresh.library.internal.ViewCompat:
+    25:25:public ViewCompat()
+    44:47:public static void setLayerType(android.view.View,int)
+com.handmark.pulltorefresh.library.internal.ViewCompat$SDK11
+com.handmark.pulltorefresh.library.internal.ViewCompat$SDK16:
+    58:58:ViewCompat$SDK16()
+com.polites.android.FlingAnimation:
+    68:69:public void setFactor(float)
+com.polites.android.GestureImageView:
+    public static final java.lang.String GLOBAL_NS
+    public static final java.lang.String LOCAL_NS
+    437:439:public void moveBy(float,float)
+    481:481:public boolean isStrict()
+    489:489:public boolean isRecycle()
+    497:504:public void reset()
+    686:686:public boolean isPortrait()
+    694:696:public void setStartingPosition(float,float)
+    712:718:public boolean isOrientationAligned()
+com.polites.android.GestureImageViewTouchListener:
+    458:465:public void reset()
+    469:469:public float getMaxScale()
+    477:477:public float getMinScale()
+com.polites.android.MathUtils:
+    22:22:public MathUtils()
+    37:39:public static float distance(float,float,float,float)
+    61:67:public void rotate(android.graphics.PointF,android.graphics.PointF,float)
+com.polites.android.MoveAnimation:
+    73:75:public void reset()
+    79:79:public float getTargetX()
+    84:85:public void setTargetX(float)
+    89:89:public float getTargetY()
+    93:94:public void setTargetY(float)
+    97:97:public long getAnimationTimeMS()
+    101:102:public void setAnimationTimeMS(long)
+com.polites.android.ZoomAnimation:
+    129:129:public float getZoom()
+    137:137:public float getTouchX()
+    145:145:public float getTouchY()
+    153:153:public long getAnimationLengthMS()
+    157:158:public void setAnimationLengthMS(long)
+    161:161:public com.polites.android.ZoomAnimationListener getZoomAnimationListener()
+com.sina.sso.RemoteSSO$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_getPackageName
+    static final int TRANSACTION_getActivityName
+    13:16:public RemoteSSO$Stub()
+    34:34:public android.os.IBinder asBinder()
+com.sina.sso.RemoteSSO$Stub$Proxy:
+    77:77:public java.lang.String getInterfaceDescriptor()
+com.tencent.mm.BuildConfig
+com.tencent.mm.algorithm.Base64
+com.tencent.mm.algorithm.LRUMap
+com.tencent.mm.algorithm.LRUMap$1
+com.tencent.mm.algorithm.LRUMap$OnClearListener
+com.tencent.mm.algorithm.LRUMap$PreRemoveCallback
+com.tencent.mm.algorithm.LRUMap$TimeVal
+com.tencent.mm.algorithm.MD5:
+    private MD5()
+    public static final byte[] getRawDigest(byte[])
+    public static final java.lang.String getMD5(java.io.FileInputStream,int,int,int)
+    public static final java.lang.String getMD5(java.io.FileInputStream,int)
+    public static java.lang.String getMD5(java.lang.String)
+    public static java.lang.String getMD5(java.io.File)
+    public static java.lang.String getMD5(java.io.File,int)
+    public static java.lang.String getMD5(java.lang.String,int,int)
+    public static java.lang.String getMD5(java.io.File,int,int)
+com.tencent.mm.algorithm.TypeTransform:
+    private TypeTransform()
+    private static byte[] a(byte[])
+    public static byte[] longToByteArrayLH(long)
+    public static byte[] intToByteArrayHL(int)
+    public static byte[] longToByteArrayHL(long)
+    public static int byteArrayLHToInt(byte[])
+    public static int byteArrayLHToInt(byte[],int)
+    public static long byteArrayLHToLong(byte[])
+    public static long byteArrayLHToLong(byte[],int)
+    public static int byteArrayHLToInt(byte[])
+    public static int byteArrayHLToInt(byte[],int)
+    public static long byteArrayHLToLong(byte[],int)
+    public static long byteArrayHLToLong(byte[])
+com.tencent.mm.algorithm.UIN
+com.tencent.mm.platformtools.CnToSpell
+com.tencent.mm.platformtools.SpellMap
+com.tencent.mm.sdk.Build
+com.tencent.mm.sdk.ConstantsUI
+com.tencent.mm.sdk.ConstantsUI$Contact
+com.tencent.mm.sdk.MMAppMgr
+com.tencent.mm.sdk.channel.ConstantsMMessage
+com.tencent.mm.sdk.channel.MMessage:
+    public MMessage()
+    public static void send(android.content.Context,java.lang.String,java.lang.String)
+com.tencent.mm.sdk.channel.MMessage$CallBack
+com.tencent.mm.sdk.channel.MMessage$Receiver
+com.tencent.mm.sdk.channel.MMessageAct:
+    public MMessageAct()
+    public static boolean send(android.content.Context,java.lang.String,java.lang.String)
+    public static boolean send(android.content.Context,java.lang.String,java.lang.String,android.os.Bundle)
+    public static boolean sendToWx(android.content.Context,java.lang.String)
+com.tencent.mm.sdk.channel.MMessageUtil:
+    private MMessageUtil()
+com.tencent.mm.sdk.channel.package-info
+com.tencent.mm.sdk.event.EventPoolFactory
+com.tencent.mm.sdk.event.EventPoolFactory$IEventPool
+com.tencent.mm.sdk.event.IEvent
+com.tencent.mm.sdk.event.IListener
+com.tencent.mm.sdk.openapi.BaseReq:
+    public void fromBundle(android.os.Bundle)
+com.tencent.mm.sdk.openapi.BaseResp
+com.tencent.mm.sdk.openapi.BaseResp$ErrCode
+com.tencent.mm.sdk.openapi.ConstantsAPI
+com.tencent.mm.sdk.openapi.GetMessageFromWX
+com.tencent.mm.sdk.openapi.GetMessageFromWX$Req
+com.tencent.mm.sdk.openapi.GetMessageFromWX$Resp
+com.tencent.mm.sdk.openapi.IWXAPI:
+    public abstract void unregisterApp()
+    public abstract boolean handleIntent(android.content.Intent,com.tencent.mm.sdk.openapi.IWXAPIEventHandler)
+    public abstract int getWXAppSupportAPI()
+    public abstract boolean openWXApp()
+    public abstract boolean sendResp(com.tencent.mm.sdk.openapi.BaseResp)
+com.tencent.mm.sdk.openapi.IWXAPIEventHandler
+com.tencent.mm.sdk.openapi.SendAuth
+com.tencent.mm.sdk.openapi.SendAuth$Req
+com.tencent.mm.sdk.openapi.SendAuth$Resp
+com.tencent.mm.sdk.openapi.SendMessageToWX:
+    private SendMessageToWX()
+com.tencent.mm.sdk.openapi.SendMessageToWX$Req:
+    public static final int WXSceneSession
+    public static final int WXSceneTimeline
+    public SendMessageToWX$Req(android.os.Bundle)
+    public void fromBundle(android.os.Bundle)
+com.tencent.mm.sdk.openapi.SendMessageToWX$Resp
+com.tencent.mm.sdk.openapi.ShowMessageFromWX
+com.tencent.mm.sdk.openapi.ShowMessageFromWX$Req
+com.tencent.mm.sdk.openapi.ShowMessageFromWX$Resp
+com.tencent.mm.sdk.openapi.WXAPIFactory:
+    public static com.tencent.mm.sdk.openapi.IWXAPI createWXAPI(android.content.Context,java.lang.String,boolean)
+com.tencent.mm.sdk.openapi.WXApiImplV10:
+    public final void unregisterApp()
+    public final boolean handleIntent(android.content.Intent,com.tencent.mm.sdk.openapi.IWXAPIEventHandler)
+    public final boolean openWXApp()
+    public final boolean sendResp(com.tencent.mm.sdk.openapi.BaseResp)
+    private static boolean a(byte[],byte[])
+com.tencent.mm.sdk.openapi.WXAppLaunchData
+com.tencent.mm.sdk.openapi.WXAppLaunchData$Builder
+com.tencent.mm.sdk.openapi.WXMediaMessage$Builder:
+    public static final java.lang.String KEY_IDENTIFIER
+    public WXMediaMessage$Builder()
+    public static com.tencent.mm.sdk.openapi.WXMediaMessage fromBundle(android.os.Bundle)
+com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject:
+    public static final int TYPE_UNKNOWN
+    public static final int TYPE_TEXT
+    public static final int TYPE_IMAGE
+    public static final int TYPE_MUSIC
+    public static final int TYPE_VIDEO
+    public static final int TYPE_URL
+    public static final int TYPE_FILE
+    public static final int TYPE_APPDATA
+    public static final int TYPE_EMOJI
+    public abstract void unserialize(android.os.Bundle)
+com.tencent.mm.sdk.openapi.package-info
+com.tencent.mm.sdk.package-info
+com.tencent.mm.sdk.platformtools.AnimationHelperImpl21below
+com.tencent.mm.sdk.platformtools.AnimationHelperImpl22
+com.tencent.mm.sdk.platformtools.BackwardSupportUtil
+com.tencent.mm.sdk.platformtools.BackwardSupportUtil$AnimationHelper
+com.tencent.mm.sdk.platformtools.BackwardSupportUtil$AnimationHelper$IHelper
+com.tencent.mm.sdk.platformtools.BackwardSupportUtil$BitmapFactory
+com.tencent.mm.sdk.platformtools.BackwardSupportUtil$ExifHelper
+com.tencent.mm.sdk.platformtools.BackwardSupportUtil$SmoothScrollFactory
+com.tencent.mm.sdk.platformtools.BackwardSupportUtil$SmoothScrollFactory$IScroll
+com.tencent.mm.sdk.platformtools.BluetoothUtil
+com.tencent.mm.sdk.platformtools.ChannelUtil
+com.tencent.mm.sdk.platformtools.CharSequences
+com.tencent.mm.sdk.platformtools.CharSequences$1
+com.tencent.mm.sdk.platformtools.CharSequences$2
+com.tencent.mm.sdk.platformtools.FilePathGenerator
+com.tencent.mm.sdk.platformtools.FilePathGenerator$DIR_HASH_TYPE
+com.tencent.mm.sdk.platformtools.FilesCopy
+com.tencent.mm.sdk.platformtools.InetUtil
+com.tencent.mm.sdk.platformtools.JpegTools
+com.tencent.mm.sdk.platformtools.KVConfig
+com.tencent.mm.sdk.platformtools.LBSManager
+com.tencent.mm.sdk.platformtools.LBSManager$1
+com.tencent.mm.sdk.platformtools.LBSManager$LocationCache
+com.tencent.mm.sdk.platformtools.LBSManager$OnLocationGotListener
+com.tencent.mm.sdk.platformtools.LVBuffer
+com.tencent.mm.sdk.platformtools.LocaleUtil
+com.tencent.mm.sdk.platformtools.Log:
+    public static final int LEVEL_VERBOSE
+    public static final int LEVEL_DEBUG
+    public static final int LEVEL_INFO
+    public static final int LEVEL_WARNING
+    public static final int LEVEL_ERROR
+    public static final int LEVEL_FATAL
+    public static final int LEVEL_NONE
+    protected Log()
+    public static void setOutputPath(java.lang.String,java.lang.String,java.lang.String,int)
+    public static void setOutputStream(java.io.InputStream,java.io.OutputStream,java.lang.String,java.lang.String,int)
+    public static void reset()
+    public static void setLevel(int,boolean)
+    public static int getLevel()
+    public static void f(java.lang.String,java.lang.String)
+    public static void w(java.lang.String,java.lang.String)
+    public static void i(java.lang.String,java.lang.String)
+    public static void v(java.lang.String,java.lang.String)
+    public static varargs void f(java.lang.String,java.lang.String,java.lang.Object[])
+    public static varargs void w(java.lang.String,java.lang.String,java.lang.Object[])
+    public static varargs void i(java.lang.String,java.lang.String,java.lang.Object[])
+    public static varargs void v(java.lang.String,java.lang.String,java.lang.Object[])
+    public static java.lang.String getSysInfo()
+com.tencent.mm.sdk.platformtools.Log$1
+com.tencent.mm.sdk.platformtools.LogHelper:
+    private LogHelper()
+    public static void initLogHeader(java.io.PrintStream,java.lang.String,java.lang.String,long,int)
+com.tencent.mm.sdk.platformtools.MAlarmHandler
+com.tencent.mm.sdk.platformtools.MAlarmHandler$CallBack
+com.tencent.mm.sdk.platformtools.MAlarmHandler$IBumper
+com.tencent.mm.sdk.platformtools.MBuf
+com.tencent.mm.sdk.platformtools.MMApplicationContext
+com.tencent.mm.sdk.platformtools.MMEntryLock
+com.tencent.mm.sdk.platformtools.MMHandlerThread
+com.tencent.mm.sdk.platformtools.MMHandlerThread$1
+com.tencent.mm.sdk.platformtools.MMHandlerThread$2
+com.tencent.mm.sdk.platformtools.MMHandlerThread$3
+com.tencent.mm.sdk.platformtools.MMHandlerThread$3$1
+com.tencent.mm.sdk.platformtools.MMHandlerThread$IWaitWorkThread
+com.tencent.mm.sdk.platformtools.MMHandlerThread$ResetCallback
+com.tencent.mm.sdk.platformtools.MTimerHandler
+com.tencent.mm.sdk.platformtools.MTimerHandler$CallBack
+com.tencent.mm.sdk.platformtools.NetStatusUtil
+com.tencent.mm.sdk.platformtools.ObserverPool
+com.tencent.mm.sdk.platformtools.ObserverPool$1
+com.tencent.mm.sdk.platformtools.ObserverPool$2
+com.tencent.mm.sdk.platformtools.ObserverPool$Event
+com.tencent.mm.sdk.platformtools.ObserverPool$Listener
+com.tencent.mm.sdk.platformtools.PhoneStatusWatcher
+com.tencent.mm.sdk.platformtools.PhoneStatusWatcher$1
+com.tencent.mm.sdk.platformtools.PhoneStatusWatcher$PhoneCallListener
+com.tencent.mm.sdk.platformtools.PhoneUtil
+com.tencent.mm.sdk.platformtools.PhoneUtil$CellInfo
+com.tencent.mm.sdk.platformtools.PhoneUtil$MacInfo
+com.tencent.mm.sdk.platformtools.PhoneUtil16Impl
+com.tencent.mm.sdk.platformtools.PhoneUtil16Impl$1
+com.tencent.mm.sdk.platformtools.PhoneUtil20Impl
+com.tencent.mm.sdk.platformtools.PhoneUtil20Impl$1
+com.tencent.mm.sdk.platformtools.QueueWorkerThread
+com.tencent.mm.sdk.platformtools.QueueWorkerThread$1
+com.tencent.mm.sdk.platformtools.QueueWorkerThread$ThreadObject
+com.tencent.mm.sdk.platformtools.QueueWorkerThread$WorkerThread
+com.tencent.mm.sdk.platformtools.SemiXml
+com.tencent.mm.sdk.platformtools.SensorController
+com.tencent.mm.sdk.platformtools.SensorController$SensorEventCallBack
+com.tencent.mm.sdk.platformtools.SmoothScrollToPosition21below
+com.tencent.mm.sdk.platformtools.SmoothScrollToPosition22
+com.tencent.mm.sdk.platformtools.SpecilApiUtil
+com.tencent.mm.sdk.platformtools.SyncTask
+com.tencent.mm.sdk.platformtools.SyncTask$1
+com.tencent.mm.sdk.platformtools.SystemProperty
+com.tencent.mm.sdk.platformtools.TimeLogger
+com.tencent.mm.sdk.platformtools.TrafficStats
+com.tencent.mm.sdk.platformtools.Util:
+    public static final int MAX_DECODE_PICTURE_SIZE
+    public static final java.lang.String PHOTO_DEFAULT_EXT
+    public static final long MILLSECONDS_OF_SECOND
+    public static final long MILLSECONDS_OF_MINUTE
+    public static final long MILLSECONDS_OF_HOUR
+    public static final long MILLSECONDS_OF_DAY
+    public static final long SECOND_OF_MINUTE
+    public static final long MINUTE_OF_HOUR
+    public static final long MAX_32BIT_VALUE
+    public static final int MIN_ACCOUNT_LENGTH
+    public static final int MAX_ACCOUNT_LENGTH
+    public static final int MIN_PASSWORD_LENGTH
+    public static final int MAX_PASSWORD_LENGTH
+    public static final int BIT_OF_KB
+    public static final int BIT_OF_MB
+    public static final int BYTE_OF_KB
+    public static final int BYTE_OF_MB
+    public static final int MASK_4BIT
+    public static final int MASK_8BIT
+    public static final int MASK_16BIT
+    public static final int MASK_32BIT
+    public static final int BEGIN_TIME
+    public static final int END_TIME
+    public static final int DAY
+    public static final java.lang.String TAIWAN
+    public static final java.lang.String HONGKONG
+    public static final java.lang.String CHINA
+    public static final java.lang.String ENGLISH
+    public static final java.lang.String LANGUAGE_DEFAULT
+    private Util()
+    public static java.lang.String escapeSqlValue(java.lang.String)
+    public static java.lang.String listToString(java.util.List,java.lang.String)
+    public static boolean isSDCardAvail()
+    public static java.util.List stringsToList(java.lang.String[])
+    public static int getIntRandom(int,int)
+    public static byte[] getUuidRandom()
+    public static boolean isDayTimeNow()
+    public static boolean isNightTime(int,int,int)
+    public static java.lang.String getTimeZoneOffset()
+    public static java.lang.String getTimeZone()
+    public static java.lang.String getTimeZoneDef()
+    public static java.lang.String formatUnixTime(long)
+    public static boolean isChinese(char)
+    public static boolean isAlpha(char)
+    public static boolean isNum(char)
+    public static boolean isValidQQNum(java.lang.String)
+    public static boolean isValidEmail(java.lang.String)
+    public static byte[] bmpToByteArray(android.graphics.Bitmap,boolean)
+    public static boolean isValidAccount(java.lang.String)
+    public static boolean isValidPassword(java.lang.String)
+    public static android.graphics.BitmapFactory$Options getImageOptions(java.lang.String)
+    public static void saveBitmapToImage(android.graphics.Bitmap,int,android.graphics.Bitmap$CompressFormat,java.lang.String,java.lang.String,boolean)
+    public static void saveBitmapToImage(android.graphics.Bitmap,int,android.graphics.Bitmap$CompressFormat,java.lang.String,boolean)
+    public static android.graphics.Bitmap getRoundedCornerBitmap(android.graphics.Bitmap,boolean,float)
+    public static java.lang.String getSizeKB(long)
+    public static java.lang.String getSizeMB(long)
+    public static java.lang.String dumpArray(java.lang.Object[])
+    public static java.lang.String dumpHex(byte[])
+    public static android.content.Intent getInstallPackIntent(java.lang.String,android.content.Context)
+    public static void installPack(java.lang.String,android.content.Context)
+    public static void shake(android.content.Context,boolean)
+    public static android.media.MediaPlayer playSound(android.content.Context,int,boolean,android.media.MediaPlayer$OnCompletionListener)
+    public static android.media.MediaPlayer playSound(android.content.Context,int,android.media.MediaPlayer$OnCompletionListener)
+    public static void playSound(android.content.Context,int)
+    public static long nowSecond()
+    public static java.lang.String formatSecToMin(int)
+    public static long nowMilliSecond()
+    public static long secondsToNow(long)
+    public static long secondsToMilliSeconds(int)
+    public static long milliSecondsToNow(long)
+    public static long ticksToNow(long)
+    public static long currentTicks()
+    public static long currentDayInMills()
+    public static long currentWeekInMills()
+    public static long currentMonthInMills()
+    public static long currentYearInMills()
+    public static int getSystemVersion(android.content.Context,int)
+    public static java.lang.String getDeviceId(android.content.Context)
+    public static java.lang.String getLine1Number(android.content.Context)
+    public static boolean isLockScreen(android.content.Context)
+    public static boolean isTopActivity(android.content.Context)
+    public static boolean isServiceRunning(android.content.Context,java.lang.String)
+    public static boolean isProcessRunning(android.content.Context,java.lang.String)
+    public static java.lang.String getTopActivityName(android.content.Context)
+    public static boolean isTopApplication(android.content.Context)
+    public static boolean isIntentAvailable(android.content.Context,android.content.Intent)
+    public static void freeBitmapMap(java.util.Map)
+    public static void selectPicture(android.content.Context,int)
+    public static int nullAsNil(java.lang.Integer)
+    public static long nullAsNil(java.lang.Long)
+    public static java.lang.String nullAsNil(java.lang.String)
+    public static boolean nullAsTrue(java.lang.Boolean)
+    public static boolean nullAsFalse(java.lang.Boolean)
+    public static int nullAs(java.lang.Integer,int)
+    public static long nullAs(java.lang.Long,long)
+    public static boolean nullAs(java.lang.Boolean,boolean)
+    public static java.lang.String nullAs(java.lang.String,java.lang.String)
+    public static int nullAsInt(java.lang.Object,int)
+    public static int getSeconds(java.lang.String,int)
+    public static int getInt(java.lang.String,int)
+    public static long getLong(java.lang.String,long)
+    public static int getHex(java.lang.String,int)
+    public static void writeToFile(java.lang.String,java.lang.String)
+    public static java.util.Map parseXml(java.lang.String,java.lang.String,java.lang.String)
+    private static void a(java.util.Map,java.lang.String,org.w3c.dom.Node,int)
+    public static void transClickToSelect(android.view.View,android.view.View)
+    public static java.lang.String getCutPasswordMD5(java.lang.String)
+    public static java.lang.String getFullPasswordMD5(java.lang.String)
+    public static org.w3c.dom.Element getRootElementFromXML(byte[])
+    public static java.lang.String convertStreamToString(java.io.InputStream)
+    public static java.lang.String encodeHexString(byte[])
+    public static byte[] decodeHexString(java.lang.String)
+    public static int guessHttpSendLength(int)
+    public static int guessHttpRecvLength(int)
+    public static int guessHttpContinueRecvLength(int)
+    public static int guessTcpConnectLength()
+    public static int guessTcpDisconnectLength()
+    public static int guessTcpSendLength(int)
+    public static int guessTcpRecvLength(int)
+    public static int[] splitToIntArray(java.lang.String)
+    public static int UnZipFolder(java.lang.String,java.lang.String)
+    public static java.lang.String getStack()
+    public static boolean checkSDCardFull()
+    public static boolean isSDCardHaveEnoughSpace(long)
+    public static java.lang.String GetHostIp()
+    public static boolean checkPermission(android.content.Context,java.lang.String)
+    public static boolean jump(android.content.Context,java.lang.String)
+    public static java.lang.String escapeStringForXml(java.lang.String)
+    public static java.lang.String processXml(java.lang.String)
+    public static java.lang.String expandEntities(java.lang.String)
+    private static int a(char[],int,int)
+    public static boolean isImgFile(java.lang.String)
+    public static java.lang.String mapToXml(java.lang.String,java.util.LinkedHashMap)
+    public static java.util.Map parseIni(java.lang.String)
+    public static boolean deleteFile(java.lang.String)
+    public static void deleteOutOfDateFile(java.lang.String,java.lang.String,long)
+    public static byte[] readFromFile(java.lang.String)
+    public static boolean writeToFile(java.lang.String,byte[])
+com.tencent.mm.sdk.platformtools.Util$1
+com.tencent.mm.sdk.platformtools.Util$2
+com.tencent.mm.sdk.platformtools.package-info
+com.tencent.mm.sdk.plugin.BaseProfile
+com.tencent.mm.sdk.plugin.IMMPluginAPI
+com.tencent.mm.sdk.plugin.MMPluginAPIImpl
+com.tencent.mm.sdk.plugin.MMPluginMsg
+com.tencent.mm.sdk.plugin.MMPluginMsg$ReceiverHelper
+com.tencent.mm.sdk.plugin.MMPluginOAuth
+com.tencent.mm.sdk.plugin.MMPluginOAuth$1
+com.tencent.mm.sdk.plugin.MMPluginOAuth$IResult
+com.tencent.mm.sdk.plugin.MMPluginOAuth$Receiver
+com.tencent.mm.sdk.plugin.MMPluginOAuth$Receiver$1
+com.tencent.mm.sdk.plugin.MMPluginProviderConstants:
+    public static final java.lang.String AUTHORITY
+    public static final int TYPE_UNKNOWN
+    public static final int TYPE_INT
+    public static final int TYPE_LONG
+    public static final int TYPE_STRING
+    public static final int TYPE_BOOLEAN
+    public static final int TYPE_FLOAT
+    public static final int TYPE_DOUBLE
+    public static final java.lang.String PLUGIN_PACKAGE_PATTERN
+    public MMPluginProviderConstants()
+com.tencent.mm.sdk.plugin.MMPluginProviderConstants$OAuth
+com.tencent.mm.sdk.plugin.MMPluginProviderConstants$PluginDB
+com.tencent.mm.sdk.plugin.MMPluginProviderConstants$PluginIntent
+com.tencent.mm.sdk.plugin.MMPluginProviderConstants$Resolver:
+    private MMPluginProviderConstants$Resolver()
+com.tencent.mm.sdk.plugin.MMPluginProviderConstants$SharedPref:
+    public static final java.lang.String KEY
+    public static final java.lang.String TYPE
+    public static final java.lang.String VALUE
+    private MMPluginProviderConstants$SharedPref()
+com.tencent.mm.sdk.plugin.MMPluginUtil
+com.tencent.mm.sdk.plugin.Profile
+com.tencent.mm.sdk.plugin.package-info
+com.tencent.mm.sdk.storage.ContentProviderDB
+com.tencent.mm.sdk.storage.CursorFieldHelper
+com.tencent.mm.sdk.storage.CursorFieldHelper$1
+com.tencent.mm.sdk.storage.CursorFieldHelper$10
+com.tencent.mm.sdk.storage.CursorFieldHelper$11
+com.tencent.mm.sdk.storage.CursorFieldHelper$12
+com.tencent.mm.sdk.storage.CursorFieldHelper$13
+com.tencent.mm.sdk.storage.CursorFieldHelper$14
+com.tencent.mm.sdk.storage.CursorFieldHelper$15
+com.tencent.mm.sdk.storage.CursorFieldHelper$16
+com.tencent.mm.sdk.storage.CursorFieldHelper$17
+com.tencent.mm.sdk.storage.CursorFieldHelper$18
+com.tencent.mm.sdk.storage.CursorFieldHelper$19
+com.tencent.mm.sdk.storage.CursorFieldHelper$2
+com.tencent.mm.sdk.storage.CursorFieldHelper$20
+com.tencent.mm.sdk.storage.CursorFieldHelper$21
+com.tencent.mm.sdk.storage.CursorFieldHelper$22
+com.tencent.mm.sdk.storage.CursorFieldHelper$23
+com.tencent.mm.sdk.storage.CursorFieldHelper$24
+com.tencent.mm.sdk.storage.CursorFieldHelper$25
+com.tencent.mm.sdk.storage.CursorFieldHelper$26
+com.tencent.mm.sdk.storage.CursorFieldHelper$27
+com.tencent.mm.sdk.storage.CursorFieldHelper$28
+com.tencent.mm.sdk.storage.CursorFieldHelper$3
+com.tencent.mm.sdk.storage.CursorFieldHelper$4
+com.tencent.mm.sdk.storage.CursorFieldHelper$5
+com.tencent.mm.sdk.storage.CursorFieldHelper$6
+com.tencent.mm.sdk.storage.CursorFieldHelper$7
+com.tencent.mm.sdk.storage.CursorFieldHelper$8
+com.tencent.mm.sdk.storage.CursorFieldHelper$9
+com.tencent.mm.sdk.storage.CursorFieldHelper$IGetMethod
+com.tencent.mm.sdk.storage.CursorFieldHelper$ISetMethod
+com.tencent.mm.sdk.storage.IAutoDBItem
+com.tencent.mm.sdk.storage.IAutoDBItem$MAutoDBInfo
+com.tencent.mm.sdk.storage.ISQLiteDatabase
+com.tencent.mm.sdk.storage.MAutoDBFieldAnnotation
+com.tencent.mm.sdk.storage.MAutoDBItem
+com.tencent.mm.sdk.storage.MAutoStorage
+com.tencent.mm.sdk.storage.MDBItem
+com.tencent.mm.sdk.storage.MStorage
+com.tencent.mm.sdk.storage.MStorage$1
+com.tencent.mm.sdk.storage.MStorage$2
+com.tencent.mm.sdk.storage.MStorage$IOnStorageChange
+com.tencent.mm.sdk.storage.MStorage$IOnStorageLoaded
+com.tencent.mm.sdk.storage.MStorageEvent
+com.tencent.mm.sdk.storage.MStorageEvent$1
+com.tencent.mm.sdk.storage.package-info
+com.tencent.open.KeyboardDetectorRelativeLayout:
+    44:49:public KeyboardDetectorRelativeLayout(android.content.Context,android.util.AttributeSet)
+com.tencent.open.OpenApi:
+    259:393:public org.json.JSONObject a(android.content.Context,java.lang.String,android.os.Bundle)
+    508:508:public static java.lang.String a()
+com.tencent.open.RedoDialog
+com.tencent.open.ServerSetting:
+    public static final int REDIRECT_URL
+    public static final int AUTHORIZE_CGI
+    public static final int STORY_URL
+    public static final int INVITE_URL
+    public static final int REPORT_URL
+    public static final int GRAPH_BASE_URL
+    public static final int BRAG_URL
+    public static final int ASK_URL
+    public static final int GIFT_URL
+    public static final int LOCAL_STORAGE_URL
+    public static final int ENVIRONMENT_NORMOL
+    public static final int ENVIRONMENT_EXPERIENCE
+    private static final java.lang.String SERVER_TYPE
+    private static final java.lang.String DEFAULT_REDIRECT_URI
+    private static final java.lang.String DEFAULT_CGI_AUTHORIZE
+    private static final java.lang.String DEFAULT_URL_SEND_STORY
+    private static final java.lang.String DEFAULT_URL_INVITE
+    private static final java.lang.String DEFAULT_URL_REPORT
+    private static final java.lang.String DEFAULT_URL_GRAPH_BASE
+    private static final java.lang.String DEFAULT_URL_BRAG
+    private static final java.lang.String DEFAULT_URL_ASK
+    private static final java.lang.String DEFAULT_URL_GIFT
+    private static final java.lang.String DEFAULT_LOCAL_STORAGE_URI
+    private static final java.lang.String SERVER_PREFS
+    private static final java.lang.String KEY_REDIRECT_URL
+    private static final java.lang.String KEY_AUTHORIZE_CGI
+    private static final java.lang.String KEY_STORY_URL
+    private static final java.lang.String KEY_INVITE_URL
+    private static final java.lang.String KEY_REPORT_URL
+    private static final java.lang.String KEY_GRAPH_BASE_URL
+    private static final java.lang.String KEY_BRAG_URL
+    private static final java.lang.String KEY_ASK_URL
+    private static final java.lang.String KEY_GIFT_URL
+    private static final java.lang.String KEY_LOCAL_STORAGE_URl
+    81:92:public void changeServer()
+    231:295:public void setEnvironment(android.content.Context,int)
+com.tencent.open.TContext:
+    68:68:public long e()
+com.tencent.open.TemporaryStorage:
+    13:13:public TemporaryStorage()
+com.tencent.open.TencentStat:
+    18:18:public TencentStat()
+com.tencent.open.Util:
+    92:884:public Util()
+    290:386:public static com.tencent.open.Util$Statistic a(android.content.Context,java.lang.String,android.os.Bundle)
+com.tencent.open.cgireport.MobileInfoUtil:
+    21:21:public MobileInfoUtil()
+com.tencent.open.cgireport.ReportComm
+com.tencent.open.e:
+    672:672:e()
+com.tencent.open.g
+com.tencent.open.j
+com.tencent.open.o
+com.tencent.plus.AvatarConstants
+com.tencent.plus.DensityUtil:
+    6:6:public DensityUtil()
+    19:20:public static int px2dip(android.content.Context,float)
+    31:32:public static int px2sp(android.content.Context,float)
+    42:43:public static int sp2px(android.content.Context,float)
+com.tencent.plus.MaskView:
+    30:32:public MaskView(android.content.Context,android.util.AttributeSet)
+com.tencent.plus.TouchView:
+    63:66:public TouchView(android.content.Context,android.util.AttributeSet)
+com.tencent.qqconnect.dataprovider.CallbackManager
+com.tencent.qqconnect.dataprovider.Constants
+com.tencent.qqconnect.dataprovider.DataType
+com.tencent.qqconnect.dataprovider.ErrorCode
+com.tencent.qqconnect.dataprovider.datatype.TextAndMediaPath:
+    10:13:public TextAndMediaPath(java.lang.String,java.lang.String)
+    16:16:public java.lang.String getText()
+    20:20:public java.lang.String getMediaPath()
+com.tencent.qqconnect.dataprovider.datatype.TextOnly:
+    9:11:public TextOnly(java.lang.String)
+    14:14:public java.lang.String getText()
+com.tencent.record.debug.Trace
+com.tencent.record.debug.TraceLevel
+com.tencent.record.info.Const
+com.tencent.record.info.DeviceDash
+com.tencent.record.info.Global:
+    70:70:public Global()
+    214:214:public static final android.content.SharedPreferences a(java.lang.String,int)
+com.tencent.record.info.Option
+com.tencent.record.info.StorageDash:
+    20:20:public StorageDash()
+com.tencent.record.util.DataUtils
+com.tencent.record.util.FileUtils:
+    24:24:public FileUtils()
+com.tencent.record.util.StrUtils:
+    16:16:public StrUtils()
+com.tencent.record.util.Utils
+com.tencent.record.util.Utils$Bit:
+    22:22:public Utils$Bit()
+com.tencent.stat.EasyActivity
+com.tencent.stat.EasyListActivity
+com.tencent.stat.MtaSDkException:
+    public MtaSDkException(java.lang.String,java.lang.Throwable)
+    public MtaSDkException(java.lang.Throwable)
+com.tencent.stat.StatAppMonitor
+com.tencent.stat.StatConfig:
+    public StatConfig()
+    public static void setDebugEnable(boolean)
+    public static void setSessionTimoutMillis(int)
+    public static void setMaxBatchReportCount(int)
+    public static void setMaxSendRetryCount(int)
+    public static void setMaxStoreEventCount(int)
+    public static java.lang.String getCustomProperty(java.lang.String)
+    public static java.lang.String getCustomProperty(java.lang.String,java.lang.String)
+    public static void setAppKey(java.lang.String)
+    public static void setQQ(android.content.Context,java.lang.String)
+    public static int getMaxParallelTimmingEvents()
+    public static void setMaxParallelTimmingEvents(int)
+    public static void setMaxSessionStatReportCount(int)
+    public static void setMaxDaySessionNumbers(int)
+    public static void setMaxReportEventLength(int)
+com.tencent.stat.StatService:
+    public StatService()
+    public static void startNewSession(android.content.Context)
+    public static void stopSession()
+    public static void onResume(android.content.Context)
+    public static void setEnvAttributes(android.content.Context,java.util.Map)
+    public static void onPause(android.content.Context)
+    public static void reportError(android.content.Context,java.lang.String)
+    public static void reportException(android.content.Context,java.lang.Throwable)
+    public static void trackCustomKVEvent(android.content.Context,java.lang.String,java.util.Properties)
+    public static varargs void trackCustomBeginEvent(android.content.Context,java.lang.String,java.lang.String[])
+    public static varargs void trackCustomEndEvent(android.content.Context,java.lang.String,java.lang.String[])
+    public static void trackCustomBeginKVEvent(android.content.Context,java.lang.String,java.util.Properties)
+    public static void trackCustomEndKVEvent(android.content.Context,java.lang.String,java.util.Properties)
+    public static void reportAppMonitorStat(android.content.Context,com.tencent.stat.StatAppMonitor)
+    public static void commitEvents(android.content.Context,int)
+com.tencent.stat.common.Env:
+    public static void appendEnvAttr(android.content.Context,java.util.Map)
+com.tencent.stat.common.StatCommonHelper:
+    public static java.lang.String getActivityName(android.content.Context)
+com.tencent.stat.common.StatConstants
+com.tencent.stat.common.StatLogger:
+    public int getLogLevel()
+    public void setLogLevel(int)
+    public void setTag(java.lang.String)
+    public void verbose(java.lang.Object)
+    public void v(java.lang.Object)
+com.tencent.stat.event.CustomEvent:
+    public com.tencent.stat.event.CustomEvent$Key getKey()
+    public void setDuration(long)
+    public void setProperties(java.util.Properties)
+com.tencent.stat.event.ErrorEvent:
+    public ErrorEvent(android.content.Context,int,java.lang.String)
+com.tencent.stat.event.MonitorStatEvent
+com.tencent.stat.event.PageView
+com.tencent.tauth.AuthActivity:
+    private static final java.lang.String TAG
+com.tencent.tauth.Constants:
+    public static final java.lang.String SDK_VERSION
+    public static final java.lang.String SDK_QUA
+    public static final java.lang.String SDK_VERSION_STRING
+    public static final java.lang.String SDK_BUILD
+    public static final java.lang.String PARAM_ACCESS_TOKEN
+    public static final java.lang.String PARAM_KEY_STR
+    public static final java.lang.String PARAM_KEY_TYPE
+    public static final java.lang.String PARAM_PLATFORM
+    public static final java.lang.String SOURCE_QZONE
+    public static final java.lang.String SOURCE_QQ
+    public static final java.lang.String PARAM_CLIENT_ID
+    public static final java.lang.String PARAM_APP_ID
+    public static final java.lang.String PARAM_CONSUMER_KEY
+    public static final java.lang.String PARAM_OPEN_ID
+    public static final java.lang.String PARAM_HOPEN_ID
+    public static final java.lang.String PARAM_PLATFORM_ID
+    public static final java.lang.String PREFERENCE_PF
+    public static final java.lang.String PARAM_SCOPE
+    public static final java.lang.String PARAM_EXPIRES_IN
+    public static final java.lang.String PARAM_SOURCE
+    public static final java.lang.String PARAM_ACT
+    public static final java.lang.String PARAM_APP_ICON
+    public static final java.lang.String PARAM_APP_DESC
+    public static final java.lang.String PARAM_APP_CUSTOM
+    public static final java.lang.String PARAM_RECEIVER
+    public static final java.lang.String PARAM_TITLE
+    public static final java.lang.String PARAM_COMMENT
+    public static final java.lang.String PARAM_SUMMARY
+    public static final java.lang.String PARAM_APPNAME
+    public static final java.lang.String PARAM_IMAGE
+    public static final java.lang.String PARAM_IMAGE_URL
+    public static final java.lang.String PARAM_TARGET_URL
+    public static final java.lang.String PARAM_APP_SOURCE
+    public static final java.lang.String PARAM_URL
+    public static final java.lang.String PARAM_TYPE
+    public static final java.lang.String PARAM_PLAY_URL
+    public static final java.lang.String PARAM_SHARE_URL
+    public static final java.lang.String PARAM_AVATAR_URI
+    public static final java.lang.String PARAM_IMG_URL
+    public static final java.lang.String PARAM_SEND_MSG
+    public static final java.lang.String PARAM_TYPE_ID
+    public static final java.lang.String PARAM_AVATAR_RETURN_ACTIVITY
+    public static final int ERROR_IO
+    public static final int ERROR_URL
+    public static final int ERROR_JSON
+    public static final int ERROR_PARAM
+    public static final int ERROR_UNKNOWN
+    public static final int ERROR_CONNECTTIMEOUT
+    public static final int ERROR_SOCKETTIMEOUT
+    public static final int ERROR_HTTPSTATUS_ERROR
+    public static final int ERROR_IO_CharConversionException
+    public static final int ERROR_IO_CharacterCodingException_MalformedInputException
+    public static final int ERROR_IO_CharacterCodingException_UnmappableCharacterException
+    public static final int ERROR_IO_ClientProtocolException_HttpResponseException
+    public static final int ERROR_IO_ClosedChannelException
+    public static final int ERROR_IO_ConnectionClosedException
+    public static final int ERROR_IO_EOFException
+    public static final int ERROR_IO_FileLockInterruptionException
+    public static final int ERROR_IO_FileNotFoundException
+    public static final int ERROR_IO_HttpRetryException
+    public static final int ERROR_IO_InterruptedIOException_ConnectTimeoutException
+    public static final int ERROR_IO_InterruptedIOException_SocketTimeoutException
+    public static final int ERROR_IO_InvalidPropertiesFormatException
+    public static final int ERROR_IO_MalformedChunkCodingException
+    public static final int ERROR_IO_MalformedURLException
+    public static final int ERROR_IO_NoHttpResponseException
+    public static final int ERROR_IO_ObjectStreamException_InvalidClassException
+    public static final int ERROR_IO_ObjectStreamException_InvalidObjectException
+    public static final int ERROR_IO_ObjectStreamException_NotActiveException
+    public static final int ERROR_IO_ObjectStreamException_NotSerializableException
+    public static final int ERROR_IO_ObjectStreamException_OptionalDataException
+    public static final int ERROR_IO_ObjectStreamException_StreamCorruptedException
+    public static final int ERROR_IO_ObjectStreamException_WriteAbortedException
+    public static final int ERROR_IO_ProtocolException
+    public static final int ERROR_IO_SSLException_SSLHandshakeException
+    public static final int ERROR_IO_SSLException_SSLKeyException
+    public static final int ERROR_IO_SSLException_SSLPeerUnverifiedException
+    public static final int ERROR_IO_SSLException_SSLProtocolException
+    public static final int ERROR_IO_SocketException_BindException
+    public static final int ERROR_IO_SocketException_ConnectException
+    public static final int ERROR_IO_SocketException_NoRouteToHostException
+    public static final int ERROR_IO_SocketException_PortUnreachableException
+    public static final int ERROR_IO_SyncFailedException
+    public static final int ERROR_IO_UTFDataFormatException
+    public static final int ERROR_IO_UnknownHostException
+    public static final int ERROR_IO_UnknownServiceException
+    public static final int ERROR_IO_UnsupportedEncodingException
+    public static final int ERROR_IO_ZipException
+    public static final java.lang.String MSG_IO_ERROR
+    public static final java.lang.String MSG_URL_ERROR
+    public static final java.lang.String MSG_JSON_ERROR
+    public static final java.lang.String MSG_PARAM_ERROR
+    public static final java.lang.String MSG_UNKNOWN_ERROR
+    public static final java.lang.String MSG_CONNECTTIMEOUT_ERROR
+    public static final java.lang.String MSG_SOCKETTIMEOUT_ERROR
+    public static final java.lang.String MSG_IMAGE_ERROR
+    public static final java.lang.String MSG_OPEN_BROWSER_ERROR
+    public static final java.lang.String MSG_SHARE_NOSD_ERROR
+    public static final java.lang.String MSG_SHARE_GETIMG_ERROR
+    public static final java.lang.String MSG_SHARE_TO_QQ_ERROR
+    public static final java.lang.String HTTP_GET
+    public static final java.lang.String HTTP_POST
+    public static final java.lang.String GRAPH_BASE
+    public static final java.lang.String GRAPH_OPEN_ID
+    public static final java.lang.String GRAPH_SIMPLE_USER_INFO
+    public static final java.lang.String GRAPH_USER_INFO
+    public static final java.lang.String GRAPH_USER_PROFILE
+    public static final java.lang.String GRAPH_ADD_SHARE
+    public static final java.lang.String GRAPH_VIP_INFO
+    public static final java.lang.String GRAPH_VIP_RICH_INFO
+    public static final java.lang.String GRAPH_ADD_TOPIC
+    public static final java.lang.String GRAPH_LIST_ALBUM
+    public static final java.lang.String GRAPH_ADD_ALBUM
+    public static final java.lang.String GRAPH_UPLOAD_PIC
+    public static final java.lang.String GRAPH_ADD_PIC_T
+    public static final java.lang.String GRAPH_SET_AVATAR
+    public static final java.lang.String GRAPH_INTIMATE_FRIENDS
+    public static final java.lang.String GRAPH_NICK_TIPS
+    public static final java.lang.String KEY_PARAMS
+    public static final java.lang.String KEY_ACTION
+    public static final java.lang.String KEY_RESPONSE
+    public static final java.lang.String KEY_ERROR_CODE
+    public static final java.lang.String KEY_ERROR_MSG
+    public static final java.lang.String KEY_ERROR_DETAIL
+    public static final java.lang.String KEY_APP_NAME
+    public static final int CODE_REQUEST_MIN
+    public static final int CODE_REQUEST_MAX
+    public static final int UI_NONE
+    public static final int UI_ACTIVITY
+    public static final int UI_DIALOG
+    public static final int UI_CHECK_TOKEN
+    public static final java.lang.String ACTION_LOGIN
+    public static final java.lang.String ACTION_STORY
+    public static final java.lang.String ACTION_INVITE
+    public static final java.lang.String ACTION_PAY
+    public static final java.lang.String ACTION_CHALLENGE
+    public static final java.lang.String ACTION_BRAG
+    public static final java.lang.String ACTION_ASK
+    public static final java.lang.String ACTION_GIFT
+    public static final java.lang.String ACTION_SHARE_QQ
+    public static final java.lang.String ACTION_CHECK_TOKEN
+    public static final java.lang.String PARAM_ENCRY_EOKEN
+    public static final java.lang.String ACTION_AVATAR
+    public static final int ACTIVITY_OK
+    public static final int ACTIVITY_CANCEL
+    public static final java.lang.String MOBILEQQ_PACKAGE_NAME
+    public static final java.lang.String MOBILEQQ_CLASS_NAME
+    11:11:public Constants()
+com.tencent.tauth.DataConvert
+com.tencent.tauth.DownloadFileFromWeiyun
+com.tencent.tauth.DownloadFileFromWeiyun$1
+com.tencent.tauth.DownloadFileFromWeiyun$2
+com.tencent.tauth.DownloadFileFromWeiyun$3
+com.tencent.tauth.IDownloadFileFromWeiyunStatus
+com.tencent.tauth.IUploadFileToWeiyunStatus
+com.tencent.tauth.Tencent:
+    148:149:public java.lang.String getAccessToken()
+    204:205:public long getExpiresIn()
+    312:314:public int invite(android.app.Activity,android.os.Bundle,com.tencent.tauth.IUiListener)
+    336:338:public int story(android.app.Activity,android.os.Bundle,com.tencent.tauth.IUiListener)
+    360:362:public int ask(android.app.Activity,android.os.Bundle,com.tencent.tauth.IUiListener)
+    383:385:public int gift(android.app.Activity,android.os.Bundle,com.tencent.tauth.IUiListener)
+    409:412:public int pay(android.app.Activity,com.tencent.tauth.IUiListener)
+    433:435:public int challenge(android.app.Activity,android.os.Bundle,com.tencent.tauth.IUiListener)
+    456:458:public int brag(android.app.Activity,android.os.Bundle,com.tencent.tauth.IUiListener)
+    500:501:public org.json.JSONObject request(java.lang.String,android.os.Bundle,java.lang.String)
+    505:512:public org.json.JSONObject requestSync(java.lang.String,android.os.Bundle,java.lang.String)
+    523:530:public org.json.JSONObject upload(java.lang.String,android.os.Bundle)
+    550:553:public void requestAsync(java.lang.String,android.os.Bundle,java.lang.String,com.tencent.tauth.IRequestListener,java.lang.Object)
+    587:587:public java.lang.String getSDKVersion()
+    603:606:public void setAvatar(android.app.Activity,android.os.Bundle)
+    623:629:public void setAvatar(android.app.Activity,android.os.Bundle,com.tencent.tauth.IUiListener)
+    650:655:public void setAvatar(android.app.Activity,android.os.Bundle,com.tencent.tauth.IUiListener,int,int)
+com.tencent.tauth.UploadFileToWeiyun
+com.tencent.tauth.UploadFileToWeiyun$1
+com.tencent.tauth.UploadFileToWeiyun$2
+com.tencent.tauth.UploadFileToWeiyun$3
+com.tencent.tauth.WeiyunConstants
+com.tencent.tauth.bean.Album
+com.tencent.tauth.bean.OpenId
+com.tencent.tauth.bean.Pic
+com.tencent.tauth.bean.UserInfo
+com.tencent.tauth.bean.UserProfile
+com.tencent.weibo.sdk.android.api.BaseAPI
+com.tencent.weibo.sdk.android.api.BaseAPI$1
+com.tencent.weibo.sdk.android.api.FriendAPI
+com.tencent.weibo.sdk.android.api.LbsAPI
+com.tencent.weibo.sdk.android.api.PublishWeiBoAPI
+com.tencent.weibo.sdk.android.api.TimeLineAPI
+com.tencent.weibo.sdk.android.api.UserAPI
+com.tencent.weibo.sdk.android.api.WeiboAPI
+com.tencent.weibo.sdk.android.api.adapter.ConversationAdapter
+com.tencent.weibo.sdk.android.api.adapter.FriendAdapter
+com.tencent.weibo.sdk.android.api.adapter.FriendAdapter$1
+com.tencent.weibo.sdk.android.api.adapter.GalleryAdapter
+com.tencent.weibo.sdk.android.api.adapter.GalleryAdapter$1
+com.tencent.weibo.sdk.android.api.util.BackGroudSeletor
+com.tencent.weibo.sdk.android.api.util.FirendCompare
+com.tencent.weibo.sdk.android.api.util.HypyUtil
+com.tencent.weibo.sdk.android.api.util.ImageLoaderAsync
+com.tencent.weibo.sdk.android.api.util.ImageLoaderAsync$1
+com.tencent.weibo.sdk.android.api.util.ImageLoaderAsync$2
+com.tencent.weibo.sdk.android.api.util.ImageLoaderAsync$callBackImage
+com.tencent.weibo.sdk.android.api.util.JsonUtil
+com.tencent.weibo.sdk.android.api.util.SharePersistent
+com.tencent.weibo.sdk.android.api.util.Util
+com.tencent.weibo.sdk.android.component.Authorize
+com.tencent.weibo.sdk.android.component.Authorize$1
+com.tencent.weibo.sdk.android.component.Authorize$2
+com.tencent.weibo.sdk.android.component.Authorize$3
+com.tencent.weibo.sdk.android.component.Authorize$4
+com.tencent.weibo.sdk.android.component.Authorize$5
+com.tencent.weibo.sdk.android.component.Authorize$6
+com.tencent.weibo.sdk.android.component.ConversationActivity
+com.tencent.weibo.sdk.android.component.ConversationActivity$1
+com.tencent.weibo.sdk.android.component.ConversationActivity$2
+com.tencent.weibo.sdk.android.component.ConversationActivity$3
+com.tencent.weibo.sdk.android.component.ConversationActivity$4
+com.tencent.weibo.sdk.android.component.FriendActivity
+com.tencent.weibo.sdk.android.component.FriendActivity$1
+com.tencent.weibo.sdk.android.component.FriendActivity$2
+com.tencent.weibo.sdk.android.component.FriendActivity$3
+com.tencent.weibo.sdk.android.component.FriendActivity$4
+com.tencent.weibo.sdk.android.component.FriendActivity$5
+com.tencent.weibo.sdk.android.component.FriendActivity$6
+com.tencent.weibo.sdk.android.component.GeneralDataShowActivity
+com.tencent.weibo.sdk.android.component.GeneralInterfaceActivity
+com.tencent.weibo.sdk.android.component.GeneralInterfaceActivity$1
+com.tencent.weibo.sdk.android.component.GeneralInterfaceActivity$2
+com.tencent.weibo.sdk.android.component.LetterListView
+com.tencent.weibo.sdk.android.component.LetterListView$OnTouchingLetterChangedListener
+com.tencent.weibo.sdk.android.component.MainPage_Activity
+com.tencent.weibo.sdk.android.component.MainPage_Activity$1
+com.tencent.weibo.sdk.android.component.MainPage_Activity$2
+com.tencent.weibo.sdk.android.component.MainPage_Activity$3
+com.tencent.weibo.sdk.android.component.MainPage_Activity$4
+com.tencent.weibo.sdk.android.component.MainPage_Activity$5
+com.tencent.weibo.sdk.android.component.PublishActivity
+com.tencent.weibo.sdk.android.component.PublishActivity$1
+com.tencent.weibo.sdk.android.component.PublishActivity$2
+com.tencent.weibo.sdk.android.component.PublishActivity$3
+com.tencent.weibo.sdk.android.component.PublishActivity$4
+com.tencent.weibo.sdk.android.component.PublishActivity$5
+com.tencent.weibo.sdk.android.component.PublishActivity$6
+com.tencent.weibo.sdk.android.component.PublishActivity$7
+com.tencent.weibo.sdk.android.component.PublishActivity$8
+com.tencent.weibo.sdk.android.component.ReAddActivity
+com.tencent.weibo.sdk.android.component.ReAddActivity$1
+com.tencent.weibo.sdk.android.component.ReAddActivity$2
+com.tencent.weibo.sdk.android.component.ReAddActivity$3
+com.tencent.weibo.sdk.android.component.ReAddActivity$4
+com.tencent.weibo.sdk.android.component.ReAddActivity$5
+com.tencent.weibo.sdk.android.component.sso.AuthHelper:
+    static final java.lang.String WEIBO_PACKAGE
+    static final int SUPPORT_WEIBO_MIN_VERSION
+    static final java.lang.String WEIBO_AUTH_URL
+    static final java.lang.String ENCRYPT_KEY
+    static final byte SDK_VERSION
+    static final int WEIBO_VALIDATE_OK
+    static final int ERROR_WEIBO_UPGRADE_NEEDED
+    static final int ERROR_WEIBO_INSTALL_NEEDED
+    29:29:public AuthHelper()
+    79:80:public static final void unregister(android.content.Context)
+com.tencent.weibo.sdk.android.component.sso.AuthReceiver:
+    static final java.lang.String ACTION
+com.tencent.weibo.sdk.android.component.sso.tools.Base64:
+    38:38:public Base64()
+    83:96:public static byte[] decode(java.lang.String)
+    100:112:protected static int getValue(char)
+com.tencent.weibo.sdk.android.component.sso.tools.Cryptor:
+    public static final int QUOTIENT
+    public static final int SALT_LEN
+    public static final int ZERO_LEN
+    25:29:public static byte[] MD5Hash(byte[],int)
+    34:57:public static int CRC32Hash(byte[])
+    64:84:public static byte[] _4bytesEncryptAFrame(int,byte[])
+    88:111:public static int _4bytesDecryptAFrame(long,byte[])
+    333:333:public byte[] decrypt(byte[],byte[])
+com.tencent.weibo.sdk.android.component.sso.tools.MD5Tools:
+    static final int S11
+    static final int S12
+    static final int S13
+    static final int S14
+    static final int S21
+    static final int S22
+    static final int S23
+    static final int S24
+    static final int S31
+    static final int S32
+    static final int S33
+    static final int S34
+    static final int S41
+    static final int S42
+    static final int S43
+    static final int S44
+    public java.lang.String digestHexStr
+    92:97:public byte[] getMD5(java.io.InputStream,long)
+    445:446:public static byte[] toMD5Byte(byte[])
+    450:459:public static byte[] toMD5Byte(java.lang.String)
+    463:464:public static byte[] toMD5Byte(java.io.InputStream,long)
+    468:474:public static java.lang.String toMD5(java.io.InputStream,long)
+    478:486:public static java.lang.String toMD5(byte[])
+    517:542:public static java.lang.String getMD5String(byte[])
+    555:593:public static java.lang.String getFileMD5(java.io.File)
+    597:604:public static java.lang.String HEXByte(byte[])
+    609:616:private static byte getByte(byte)
+com.tencent.weibo.sdk.android.model.AccountModel
+com.tencent.weibo.sdk.android.model.BaseVO
+com.tencent.weibo.sdk.android.model.Firend
+com.tencent.weibo.sdk.android.model.ImageInfo
+com.tencent.weibo.sdk.android.model.ModelResult
+com.tencent.weibo.sdk.android.network.HttpCallback
+com.tencent.weibo.sdk.android.network.HttpConfig
+com.tencent.weibo.sdk.android.network.HttpReq
+com.tencent.weibo.sdk.android.network.HttpReq$UTF8PostMethod
+com.tencent.weibo.sdk.android.network.HttpReqWeiBo
+com.tencent.weibo.sdk.android.network.HttpService
+com.tencent.weibo.sdk.android.network.ReqParam
+com.tencent.weibo.sdk.android.network.ReqParam$1
+org.apache.http.entity.mime.Header:
+    68:68:public java.util.List getFields()
+    84:92:public java.util.List getFields(java.lang.String)
+    97:106:public int removeFields(java.lang.String)
+    110:133:public void setField(org.apache.http.entity.mime.MinimalField)
+org.apache.http.entity.mime.HttpMultipart:
+    138:139:public HttpMultipart(java.lang.String,java.nio.charset.Charset,java.lang.String)
+    142:143:public HttpMultipart(java.lang.String,java.lang.String)
+    146:146:public java.lang.String getSubType()
+    150:150:public java.nio.charset.Charset getCharset()
+    154:154:public org.apache.http.entity.mime.HttpMultipartMode getMode()
+org.apache.http.entity.mime.MIME:
+    public static final java.lang.String CONTENT_TYPE
+    public static final java.lang.String CONTENT_TRANSFER_ENC
+    public static final java.lang.String CONTENT_DISPOSITION
+    public static final java.lang.String ENC_8BIT
+    public static final java.lang.String ENC_BINARY
+    36:36:public MIME()
+org.apache.http.entity.mime.MultipartEntity:
+    93:94:public MultipartEntity(org.apache.http.entity.mime.HttpMultipartMode)
+org.apache.http.entity.mime.content.AbstractContentBody:
+    61:61:public java.lang.String getMediaType()
+    65:65:public java.lang.String getSubType()
+org.apache.http.entity.mime.content.ContentDescriptor:
+    public abstract java.lang.String getMediaType()
+    public abstract java.lang.String getSubType()
+org.apache.http.entity.mime.content.FileBody
+org.apache.http.entity.mime.content.InputStreamBody
+org.apache.http.entity.mime.content.StringBody:
+    58:60:public static org.apache.http.entity.mime.content.StringBody create(java.lang.String,java.lang.String,java.nio.charset.Charset)
+    69:69:public static org.apache.http.entity.mime.content.StringBody create(java.lang.String,java.nio.charset.Charset)
+    76:76:public static org.apache.http.entity.mime.content.StringBody create(java.lang.String)
+    126:127:public StringBody(java.lang.String)
+    130:130:public java.io.Reader getReader()
+org.taptwo.android.widget.CircleFlowIndicator
+org.taptwo.android.widget.CircleFlowIndicator$FadeTimer
+org.taptwo.android.widget.TitleFlowIndicator
+org.taptwo.android.widget.TitleProvider
+org.taptwo.android.widget.ViewFlow:
+    private static final int SNAP_VELOCITY
+    private static final int INVALID_SCREEN
+    private static final int TOUCH_STATE_REST
+    private static final int TOUCH_STATE_SCROLLING
+org.taptwo.android.widget.viewflow.R:
+    9:9:public R()
+org.taptwo.android.widget.viewflow.R$attr
+org.taptwo.android.widget.viewflow.R$drawable
+org.taptwo.android.widget.viewflow.R$id
+org.taptwo.android.widget.viewflow.R$string
+org.taptwo.android.widget.viewflow.R$styleable:
+    43:43:public R$styleable()

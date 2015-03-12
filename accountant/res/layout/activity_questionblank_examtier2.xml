@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ashen"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_head" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/questionContentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/contentListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/none"
+                android:divider="@drawable/topic_driver"
+                android:dividerHeight="1.0dip"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/noneDataLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/noneDataImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/nonedata"
+                android:src="@drawable/nodata" />
+
+            <TextView
+                android:id="@+id/noneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/nonedata"
+                android:textSize="30.0dip" />
+        </LinearLayout>
+        <include layout="@layout/loading_layout" />
+        <!-- <include layout="@layout/nodata_layout" /> -->
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_little_size11">17.0sp</dimen>
+    <dimen name="text_little_size">18.0sp</dimen>
+    <dimen name="text_medium_size">22.0sp</dimen>
+    <dimen name="text_small_size">20.0sp</dimen>
+    <dimen name="text_large_size">24.0sp</dimen>
+    <dimen name="title_medium_size">26.0sp</dimen>
+    <dimen name="title_small_size">24.0sp</dimen>
+    <dimen name="title_large_size">28.0sp</dimen>
+	<dimen name="topic_content_text_size">20.0sp</dimen>
+    <dimen name="topic_content_floor_text_size">18.0sp</dimen>
+    <dimen name="topic_title_text_size">22.0sp</dimen>
+    <dimen name="topic_username_text_size">18.0sp</dimen>
+    <dimen name="topic_location_text_size">16.0sp</dimen>
+    <dimen name="topic_view_text_size">16.0sp</dimen>
+    <dimen name="topic_response_text_size">16.0sp</dimen>
+    <dimen name="topic_level_text_size">16.0sp</dimen>
+    <dimen name="topic_time_text_size">16.0sp</dimen>
+</resources>

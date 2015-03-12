@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightbule"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/top_bg"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip" >
+
+            <Button
+                android:id="@+id/btn_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:background="@drawable/btn_goback" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/topmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_center"
+                        style="@style/title_comm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最新发布" />
+
+                    <ImageView
+                        android:id="@+id/img_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_down" 
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" 
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_item_bg_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_item_menu_bg_out" 
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_item_bg_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_item_menu_bg_in" 
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/btn_post" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small_size" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="亲,木有数据"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_medium_size" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/listview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/c_home_background"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/reload"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10.0dip"
+            android:visibility="gone" >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nodata"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reloadMsg"
+                android:textSize="@dimen/text_small_size" 
+                />
+            <Button
+                android:id="@+id/btn_reload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="重新加载"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium_size" 
+                android:background="@drawable/btn_last_practice"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/load"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+			<ProgressBar 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:indeterminate="false" 
+  	        android:indeterminateDrawable="@drawable/progressbar_style_icon" />
+            <TextView
+                android:id="@+id/txt_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_medium_size"
+                android:text="加载中..."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large_size" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+  	<RelativeLayout 
+  	    xmlns:android="http://schemas.android.com/apk/res/android"
+  	    android:id="@+id/loading"
+  	    android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  	    >
+  	    <ProgressBar 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:layout_centerInParent="true"
+  	        android:indeterminate="false" 
+  	        android:indeterminateDrawable="@drawable/progressbar_style_icon" />
+  	</RelativeLayout>

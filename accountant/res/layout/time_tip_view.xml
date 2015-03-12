@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pregnancy_tip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/baby_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/moren" />
+
+    <RelativeLayout
+        android:id="@+id/set_date_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10.0dip"
+        android:paddingBottom="10.0dip"
+         >
+        <TextView
+            android:id="@+id/day_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size" 
+            android:paddingBottom="10.0dip"
+            />
+        <TextView
+            android:id="@+id/mama_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/day_date"
+            android:text="@string/restTime1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size" />
+        <TextView
+            android:id="@+id/rest_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mama_tip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/mama_tip"
+            android:textColor="@color/red"
+            android:textSize="@dimen/title_medium_size" />
+    </RelativeLayout>
+</RelativeLayout>

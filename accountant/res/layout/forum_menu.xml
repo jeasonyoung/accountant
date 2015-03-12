@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sort_bkg_new"
+    android:orientation="vertical"
+    android:paddingLeft="5.0dip"
+    android:paddingRight="5.0dip"
+    android:paddingTop="10.0dip" >
+
+    <LinearLayout
+        android:id="@+id/layout_sort_response"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector_background"
+        android:gravity="center"
+        android:clickable="true"
+        android:padding="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后回复"
+            android:textColor="@color/deep_pink"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_sort_create"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector_background"
+        android:gravity="center"
+        android:clickable="true"
+        android:padding="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新发布"
+            android:textColor="@color/deep_pink"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_sort_elite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector_background"
+        android:gravity="center"
+        android:clickable="true"
+        android:padding="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精华帖"
+            android:textColor="@color/deep_pink"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_sort_datebaby_elite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:padding="5.0dip" >
+
+        <TextView
+            android:id="@+id/date_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="孕3月"
+            android:textColor="@color/deep_pink"
+            android:textSize="15.0sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月精华帖"
+            android:textColor="@color/deep_pink"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_sort_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector_background"
+        android:gravity="center"
+        android:clickable="true"
+        android:padding="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地区选择"
+            android:textColor="@color/deep_pink"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

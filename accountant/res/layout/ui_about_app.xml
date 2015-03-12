@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+	<include layout ="@layout/top_head" android:id="@+id/head"/>
+    <LinearLayout
+        android:id="@+id/panel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_below="@id/head"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="150.0dip"
+            android:layout_height="150.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/tem_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_medium_size" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:text="@string/app_name_suffix"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_medium_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel1"
+        android:layout_marginTop="30.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:text="版本："
+                android:textColor="#ff8087a1"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:text="官网："
+                android:textColor="#ff8087a1"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服热线："
+                android:textColor="#ff8087a1"
+                android:textSize="@dimen/text_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:text="@string/version_name"
+                android:textColor="#ff186ef0"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:id="@+id/website1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:text="@string/website"
+                android:textColor="#ff186ef0"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:id="@+id/telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telephone"
+                android:textColor="#ff186ef0"
+                android:textSize="@dimen/text_small_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5.0dip"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center_horizontal"
+                android:text="@string/right_info"
+                android:textColor="#ffdcdcdc"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:id="@+id/website2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center_horizontal"
+                android:text="@string/company_name"
+                android:textColor="#ff186ef0"
+                android:textSize="@dimen/text_small_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="home_grid_drawable_ids">
+        <item>@drawable/ic_grid_knowledge</item>
+        <item>@drawable/ic_grid_chapter</item>
+        <item>@drawable/ic_grid_favor</item>
+        <item>@drawable/ic_grid_error_redo</item>
+        <item>@drawable/ic_grid_exam</item>
+        <item>@drawable/ic_grid_notebook</item>
+        <item>@drawable/ic_grid_cycle</item>
+        <item>@drawable/ic_grid_record</item>
+        <item>@drawable/ic_grid_other</item>
+    </array>
+    <array name="home_grid_color_ids">
+        <item>@drawable/c_home_item_knowledge</item>
+        <item>@drawable/c_home_item_chapter</item>
+        <item>@drawable/c_home_item_favor</item>
+        <item>@drawable/c_home_item_error_redo</item>
+        <item>@drawable/c_home_item_exam</item>
+        <item>@drawable/c_home_item_notebook</item>
+        <item>@drawable/c_home_item_cycle</item>
+        <item>@drawable/c_home_item_record</item>
+        <item>@drawable/c_home_item_other</item>
+    </array>
+    <string-array name="home_grid_titles">
+        <item>@string/everydayKnowledge</item>
+        <item>@string/chapter</item>
+        <item>@string/myFavor</item>
+        <item>@string/errorRedo</item>
+        <item>@string/simulate</item>
+        <item>@string/myNotebook</item>
+        <item>@string/communication</item>
+        <item>@string/learnRecord</item>
+        <item>@string/other</item>
+    </string-array>
+    <!-- 分享 -->
+    <array name="share_grid_drawable_ids">
+        <item>@drawable/btn_weixin_share</item>
+        <item>@drawable/btn_weixin_pengyou</item>
+        <item>@drawable/btn_weixin_sina</item>
+        <item>@drawable/btn_weixin_qzone</item>
+    </array>
+    <string-array name="share_grid_titles">
+        <item>@string/share_txt_wechat</item>
+        <item>@string/share_txt_pengyou</item>
+        <item>@string/share_txt_sina</item>
+        <item>@string/share_txt_qzone</item>
+    </string-array>
+    
+</resources>
