@@ -250,7 +250,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:activeColor
+          @attr name org.taptwo.android.widget.viewflow:activeColor
         */
         public static final int CircleFlowIndicator_activeColor = 0;
         /**
@@ -267,7 +267,7 @@ containing a value of this type.
 <tr><td><code>stroke</code></td><td>0</td><td></td></tr>
 <tr><td><code>fill</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name android:activeType
+          @attr name org.taptwo.android.widget.viewflow:activeType
         */
         public static final int CircleFlowIndicator_activeType = 7;
         /**
@@ -281,7 +281,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:centered
+          @attr name org.taptwo.android.widget.viewflow:centered
         */
         public static final int CircleFlowIndicator_centered = 4;
         /**
@@ -295,7 +295,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:fadeOut
+          @attr name org.taptwo.android.widget.viewflow:fadeOut
         */
         public static final int CircleFlowIndicator_fadeOut = 5;
         /**
@@ -310,7 +310,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:inactiveColor
+          @attr name org.taptwo.android.widget.viewflow:inactiveColor
         */
         public static final int CircleFlowIndicator_inactiveColor = 1;
         /**
@@ -327,7 +327,7 @@ containing a value of this type.
 <tr><td><code>stroke</code></td><td>0</td><td></td></tr>
 <tr><td><code>fill</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name android:inactiveType
+          @attr name org.taptwo.android.widget.viewflow:inactiveType
         */
         public static final int CircleFlowIndicator_inactiveType = 6;
         /**
@@ -343,7 +343,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:radius
+          @attr name org.taptwo.android.widget.viewflow:radius
         */
         public static final int CircleFlowIndicator_radius = 2;
         /**
@@ -359,7 +359,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:spacing
+          @attr name org.taptwo.android.widget.viewflow:spacing
         */
         public static final int CircleFlowIndicator_spacing = 3;
         /** Attributes that can be used with a TitleFlowIndicator.
@@ -412,7 +412,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:clipPadding
+          @attr name org.taptwo.android.widget.viewflow:clipPadding
         */
         public static final int TitleFlowIndicator_clipPadding = 1;
         /**
@@ -426,7 +426,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:customTypeface
+          @attr name org.taptwo.android.widget.viewflow:customTypeface
         */
         public static final int TitleFlowIndicator_customTypeface = 10;
         /**
@@ -441,7 +441,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:footerColor
+          @attr name org.taptwo.android.widget.viewflow:footerColor
         */
         public static final int TitleFlowIndicator_footerColor = 8;
         /**
@@ -457,7 +457,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:footerLineHeight
+          @attr name org.taptwo.android.widget.viewflow:footerLineHeight
         */
         public static final int TitleFlowIndicator_footerLineHeight = 7;
         /**
@@ -473,7 +473,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:footerTriangleHeight
+          @attr name org.taptwo.android.widget.viewflow:footerTriangleHeight
         */
         public static final int TitleFlowIndicator_footerTriangleHeight = 9;
         /**
@@ -487,7 +487,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:selectedBold
+          @attr name org.taptwo.android.widget.viewflow:selectedBold
         */
         public static final int TitleFlowIndicator_selectedBold = 3;
         /**
@@ -502,7 +502,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:selectedColor
+          @attr name org.taptwo.android.widget.viewflow:selectedColor
         */
         public static final int TitleFlowIndicator_selectedColor = 2;
         /**
@@ -518,7 +518,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:selectedSize
+          @attr name org.taptwo.android.widget.viewflow:selectedSize
         */
         public static final int TitleFlowIndicator_selectedSize = 4;
         /**
@@ -533,7 +533,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:textColor
+          @attr name org.taptwo.android.widget.viewflow:textColor
         */
         public static final int TitleFlowIndicator_textColor = 5;
         /**
@@ -549,7 +549,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:textSize
+          @attr name org.taptwo.android.widget.viewflow:textSize
         */
         public static final int TitleFlowIndicator_textSize = 6;
         /**
@@ -565,7 +565,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:titlePadding
+          @attr name org.taptwo.android.widget.viewflow:titlePadding
         */
         public static final int TitleFlowIndicator_titlePadding = 0;
         /** Attributes that can be used with a ViewFlow.
@@ -592,7 +592,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:sidebuffer
+          @attr name org.taptwo.android.widget.viewflow:sidebuffer
         */
         public static final int ViewFlow_sidebuffer = 0;
     };

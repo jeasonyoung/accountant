@@ -5,11 +5,11 @@
 # view res/layout/abs__screen_action_bar_overlay.xml #generated:26
 # view res/layout/abs__screen_simple.xml #generated:32
 # view res/layout/abs__screen_simple_overlay_action_mode.xml #generated:27
-# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:43
-# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:24
+# view xlarge/res/layout-xlarge/abs__screen_action_bar.xml #generated:43
+# view xlarge/res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:24
 -keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout { <init>(...); }
 
-# view large\res/layout-large/abs__action_mode_close_item.xml #generated:17
+# view large/res/layout-large/abs__action_mode_close_item.xml #generated:17
 # view res/layout/abs__action_mode_close_item.xml #generated:17
 -keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout { <init>(...); }
 
@@ -27,21 +27,21 @@
 # view res/layout/abs__screen_action_bar.xml #generated:50
 # view res/layout/abs__screen_action_bar_overlay.xml #generated:29
 # view res/layout/abs__screen_action_bar_overlay.xml #generated:52
-# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:26
-# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:27
+# view xlarge/res/layout-xlarge/abs__screen_action_bar.xml #generated:26
+# view xlarge/res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:27
 -keep class com.actionbarsherlock.internal.widget.ActionBarContainer { <init>(...); }
 
 # view res/layout/abs__action_mode_bar.xml #generated:19
 # view res/layout/abs__screen_action_bar.xml #generated:36
 # view res/layout/abs__screen_action_bar_overlay.xml #generated:40
-# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:36
-# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:37
+# view xlarge/res/layout-xlarge/abs__screen_action_bar.xml #generated:36
+# view xlarge/res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:37
 -keep class com.actionbarsherlock.internal.widget.ActionBarContextView { <init>(...); }
 
 # view res/layout/abs__screen_action_bar.xml #generated:31
 # view res/layout/abs__screen_action_bar_overlay.xml #generated:35
-# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:31
-# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:32
+# view xlarge/res/layout-xlarge/abs__screen_action_bar.xml #generated:31
+# view xlarge/res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:32
 -keep class com.actionbarsherlock.internal.widget.ActionBarView { <init>(...); }
 
 # view res/layout/abs__action_bar_home.xml #generated:17
@@ -282,7 +282,7 @@
 -keep class com.umeng.socialize.view.ShareActivity { <init>(...); }
 
 # view res/layout/umeng_socialize_post_share.xml #generated:2
-# view sw550dp-large\res/layout-sw550dp-large/umeng_socialize_post_share.xml #generated:2
+# view sw550dp-large/res/layout-sw550dp-large/umeng_socialize_post_share.xml #generated:2
 -keep class com.umeng.socialize.view.wigets.KeyboardListenRelativeLayout { <init>(...); }
 
 # view res/layout/umeng_socialize_comment_view.xml #generated:30
